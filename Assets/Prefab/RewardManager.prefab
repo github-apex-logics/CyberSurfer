@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7517305393057401590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634017674307615137}
+  - component: {fileID: 2871016499791912829}
+  m_Layer: 0
+  m_Name: RewardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1634017674307615137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517305393057401590}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2871016499791912829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517305393057401590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0585d3a8d3ae8ed48a35aec861551b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRewards: []
+  ri: {fileID: 11400000, guid: 1af4e3cab92d8c74795a69b6fb4c6656, type: 2}
+  rewardChances:
+  - name: Casual
+    isReward: 1
+    rewardType: 0
+    reward_probability: 75
+    lootType: 0
+    loot_probability: 0
+  - name: Rare
+    isReward: 1
+    rewardType: 1
+    reward_probability: 20
+    lootType: 0
+    loot_probability: 0
+  - name: SpecialKey
+    isReward: 1
+    rewardType: 2
+    reward_probability: 3
+    lootType: 0
+    loot_probability: 0
+  - name: RareKey
+    isReward: 1
+    rewardType: 3
+    reward_probability: 2
+    lootType: 0
+    loot_probability: 0
+  rewardUI: {fileID: 0}

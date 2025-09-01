@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: b21cd7d4e9dbafb409ad809b73255124
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: alt
+    100002: alt_2
+    100004: Aparat
+    100006: Aparat_2
+    100008: but
+    100010: but_1
+    100012: cap
+    100014: Capsule
+    100016: cember
+    100018: cember_2
+    100020: cu
+    100022: cub
+    100024: cubb
+    100026: cubbb
+    100028: Cube
+    100030: Cube_2
+    100032: Cube_4
+    100034: cuu
+    100036: cuuu
+    100038: cuuuu
+    100040: cuuuuu
+    100042: ee
+    100044: en_alt
+    100046: en_alt_2
+    100048: Kle_1
+    100050: Kle_1_1
+    100052: Kule
+    100054: Kule_2
+    100056: Kuleler
+    100058: Kuleler_2
+    100060: Kuleler_3
+    100062: Orta
+    100064: Orta_2
+    100066: parca
+    100068: Plane_27
+    100070: Platform
+    100072: Platform_1
+    100074: //RootNode
+    100076: tu
+    100078: Yer
+    100080: Yer_2
+    100082: "\xFCst"
+    100084: "\xFCst_2"
+    400000: alt
+    400002: alt_2
+    400004: Aparat
+    400006: Aparat_2
+    400008: but
+    400010: but_1
+    400012: cap
+    400014: Capsule
+    400016: cember
+    400018: cember_2
+    400020: cu
+    400022: cub
+    400024: cubb
+    400026: cubbb
+    400028: Cube
+    400030: Cube_2
+    400032: Cube_4
+    400034: cuu
+    400036: cuuu
+    400038: cuuuu
+    400040: cuuuuu
+    400042: ee
+    400044: en_alt
+    400046: en_alt_2
+    400048: Kle_1
+    400050: Kle_1_1
+    400052: Kule
+    400054: Kule_2
+    400056: Kuleler
+    400058: Kuleler_2
+    400060: Kuleler_3
+    400062: Orta
+    400064: Orta_2
+    400066: parca
+    400068: Plane_27
+    400070: Platform
+    400072: Platform_1
+    400074: //RootNode
+    400076: tu
+    400078: Yer
+    400080: Yer_2
+    400082: "\xFCst"
+    400084: "\xFCst_2"
+    2100000: Mat.3
+    2100002: Mat.1
+    2100004: Mat.3.1
+    2100006: Mat.3.2
+    2100008: Mat.3.3
+    2100010: Mat.3.4
+    2100012: Mat.3.5
+    2100014: Mat.3.6
+    2100016: Mat.3.7
+    2100018: Mat.3.8
+    2100020: Mat.3.12
+    2100022: Mat.3.13
+    2100024: Mat.3.14
+    2100026: Mat.3.15
+    2100028: Mat.3.16
+    2100030: Capsule
+    2100032: ee
+    2100034: en alt
+    2100036: alt
+    2100038: Aparat
+    2100040: "\xFCst"
+    2100042: Orta
+    2100044: but
+    2100046: cember
+    2100048: Cube
+    2100050: Kle 1
+    2100052: Kuleler
+    2100054: Mat.2
+    2300000: alt
+    2300002: alt_2
+    2300004: Aparat
+    2300006: Aparat_2
+    2300008: but
+    2300010: but_1
+    2300012: cap
+    2300014: Capsule
+    2300016: cember
+    2300018: cember_2
+    2300020: cu
+    2300022: cub
+    2300024: cubb
+    2300026: cubbb
+    2300028: Cube
+    2300030: Cube_2
+    2300032: Cube_4
+    2300034: cuu
+    2300036: cuuu
+    2300038: cuuuu
+    2300040: cuuuuu
+    2300042: ee
+    2300044: en_alt
+    2300046: en_alt_2
+    2300048: Kle_1
+    2300050: Kle_1_1
+    2300052: Kuleler
+    2300054: Kuleler_2
+    2300056: Kuleler_3
+    2300058: Orta
+    2300060: Orta_2
+    2300062: Plane_27
+    2300064: tu
+    2300066: "\xFCst"
+    2300068: "\xFCst_2"
+    3300000: alt
+    3300002: alt_2
+    3300004: Aparat
+    3300006: Aparat_2
+    3300008: but
+    3300010: but_1
+    3300012: cap
+    3300014: Capsule
+    3300016: cember
+    3300018: cember_2
+    3300020: cu
+    3300022: cub
+    3300024: cubb
+    3300026: cubbb
+    3300028: Cube
+    3300030: Cube_2
+    3300032: Cube_4
+    3300034: cuu
+    3300036: cuuu
+    3300038: cuuuu
+    3300040: cuuuuu
+    3300042: ee
+    3300044: en_alt
+    3300046: en_alt_2
+    3300048: Kle_1
+    3300050: Kle_1_1
+    3300052: Kuleler
+    3300054: Kuleler_2
+    3300056: Kuleler_3
+    3300058: Orta
+    3300060: Orta_2
+    3300062: Plane_27
+    3300064: tu
+    3300066: "\xFCst"
+    3300068: "\xFCst_2"
+    4300000: cap
+    4300002: tu
+    4300004: cu
+    4300006: cuu
+    4300008: cuuu
+    4300010: cuuuu
+    4300012: cuuuuu
+    4300014: Kuleler
+    4300016: cub
+    4300018: cubb
+    4300020: cubbb
+    4300022: Aparat
+    4300024: "\xFCst"
+    4300026: alt
+    4300028: en_alt
+    4300030: cember
+    4300032: Orta
+    4300034: Capsule
+    4300036: ee
+    4300038: en_alt_2
+    4300040: alt_2
+    4300042: Aparat_2
+    4300044: "\xFCst_2"
+    4300046: Orta_2
+    4300048: but
+    4300050: but_1
+    4300052: cember_2
+    4300054: Cube_2
+    4300056: Cube
+    4300058: Cube_4
+    4300060: Kle_1
+    4300062: Kuleler_2
+    4300064: Kle_1_1
+    4300066: Kuleler_3
+    4300068: Plane_27
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aparat
+    second: {fileID: 2100000, guid: fd1780af57aeea1459246c037a8f9e7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Capsule
+    second: {fileID: 2100000, guid: d0b79725b3ab2b141ae1a0152ea54b3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube
+    second: {fileID: 2100000, guid: eca8812ec9b472e46b42c867b25e8904, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kle 1
+    second: {fileID: 2100000, guid: fe31f9a3158af9f42b2ff75ea5dc6753, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kuleler
+    second: {fileID: 2100000, guid: 0180662d205bb9444b33a3dad57e6b9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 29dc895011e6d3c42a75fef23b2cf4c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: e99f42a7f116cb948a5fdaaaa9bfa147, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: 419452438946e3a42844ca93e80f7ee5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.1
+    second: {fileID: 2100000, guid: 3488a00d2f9d1064bb01a6a6d00d91d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.12
+    second: {fileID: 2100000, guid: 7334aa1b706df7e47b5fdc3d1df53622, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.13
+    second: {fileID: 2100000, guid: 9686a52e2f1105845be8b5c78380527a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.14
+    second: {fileID: 2100000, guid: e182e39a6269823419513e8baeeca23d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.15
+    second: {fileID: 2100000, guid: b4df22545a44c6843a45b4a5ebfc6f75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.16
+    second: {fileID: 2100000, guid: 95783e5feb4646846b2251716234d81e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.2
+    second: {fileID: 2100000, guid: be604cd268c0aac419626e1126c245cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.3
+    second: {fileID: 2100000, guid: 5eb53f3fbafb66d4d9ac440a5f2e3e1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.4
+    second: {fileID: 2100000, guid: 9ff995dd2dad5a340972570fa55cd38b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.5
+    second: {fileID: 2100000, guid: 2735303c0972e6d41b98d110354c4750, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.6
+    second: {fileID: 2100000, guid: d04fc089abf4cdd47a9bd26fe45ba363, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.7
+    second: {fileID: 2100000, guid: f2c47aae8a3e8c148b4a238161edf17e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3.8
+    second: {fileID: 2100000, guid: 0c7165afb9bd4e0479d84c61838b704e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orta
+    second: {fileID: 2100000, guid: 91c9d50c325c56d43a80eb3f67ec1619, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: alt
+    second: {fileID: 2100000, guid: 6986e5c3a02e1d7498f3b30649e1b62e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: but
+    second: {fileID: 2100000, guid: 513ef695826ffbe4ab3ebcf3ac52fd25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cember
+    second: {fileID: 2100000, guid: ab4302d7f222dd142b149f2b5f0c4e57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ee
+    second: {fileID: 2100000, guid: 4df520b86daf60940b74fefe55d09489, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: en alt
+    second: {fileID: 2100000, guid: 720993362ebfcf74c903573c1b0bfc1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\xFCst"
+    second: {fileID: 2100000, guid: b332bc14517da504d83896303aa81994, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

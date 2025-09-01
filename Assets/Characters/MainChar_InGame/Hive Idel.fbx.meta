@@ -1,0 +1,846 @@
+fileFormatVersion: 2
+guid: 84de01a1578c8e248a7f371822e59dae
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Hive_Mind_Idle_1_Chest_M' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HiveIdle
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Hive_Mind_Idle_1_Root_M
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Hip_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Hip_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Knee_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Knee_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Ankle_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Ankle_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Spine1_M
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Neck_M
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Head_M
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Scapula_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Scapula_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Shoulder_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Shoulder_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Elbow_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Elbow_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Wrist_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Wrist_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Toes_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Toes_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_Helmet_M
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_ThumbFinger1_L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_ThumbFinger2_L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_ThumbFinger3_L
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_MiddleFinger1_L
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_MiddleFinger2_L
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_MiddleFinger3_L
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_RingFinger1_L
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_RingFinger2_L
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_RingFinger3_L
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_PinkyFinger1_L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_PinkyFinger2_L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_PinkyFinger3_L
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_ThumbFinger1_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_ThumbFinger2_R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_ThumbFinger3_R
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_MiddleFinger1_R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_MiddleFinger2_R
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_MiddleFinger3_R
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_RingFinger1_R
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_RingFinger2_R
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_RingFinger3_R
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_PinkyFinger1_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_PinkyFinger2_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hive_Mind_Idle_1_PinkyFinger3_R
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Hive Idel(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Root_M
+      parentName: Hive Idel(Clone)
+      position: {x: -0.0000000011920929, y: 3.7426689, z: 0.095385365}
+      rotation: {x: 0.3690355, y: -0.51636684, z: -0.5039279, w: 0.5858625}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Hip_R
+      parentName: Hive_Mind_Idle_1_Root_M
+      position: {x: 0.15778282, y: 0.022097075, z: -0.42799187}
+      rotation: {x: 0.053846266, y: 0.9875465, z: -0.10133812, w: -0.10762477}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Knee_R
+      parentName: Hive_Mind_Idle_1_Hip_R
+      position: {x: -1.4915024, y: 1.2079227e-15, z: 1.4210854e-15}
+      rotation: {x: -0.0005637202, y: 0.0016875116, z: 0.27451643, w: 0.96158075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Ankle_R
+      parentName: Hive_Mind_Idle_1_Knee_R
+      position: {x: -1.8081548, y: 3.126388e-15, z: 2.245315e-14}
+      rotation: {x: 0.0029947176, y: -0.0996621, z: -0.27729508, w: 0.95559716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Toes_R
+      parentName: Hive_Mind_Idle_1_Ankle_R
+      position: {x: -0.48367962, y: 0.51607454, z: 7.247536e-15}
+      rotation: {x: -0.022518665, y: 0.006253734, z: -0.67095935, w: 0.74112576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ToesEnd_R
+      parentName: Hive_Mind_Idle_1_Toes_R
+      position: {x: -0.44556734, y: -3.5527135e-16, z: -9.795519e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Spine1_M
+      parentName: Hive_Mind_Idle_1_Root_M
+      position: {x: -0.8303247, y: -4.2632563e-16, z: -1.1191048e-15}
+      rotation: {x: 0.111046046, y: 0.0057580136, z: -0.039306562, w: 0.99302095}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Chest_M
+      parentName: Hive_Mind_Idle_1_Spine1_M
+      position: {x: -0.75593716, y: 3.1974422e-16, z: 1.0924595e-15}
+      rotation: {x: 0.11114783, y: -0.0032443865, z: -0.11951126, w: 0.9865864}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Scapula_R
+      parentName: Hive_Mind_Idle_1_Chest_M
+      position: {x: -0.47976312, y: 0.4665649, z: -0.39584222}
+      rotation: {x: -0.2375631, y: -0.74679846, z: 0.032159045, w: 0.62033993}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Shoulder_R
+      parentName: Hive_Mind_Idle_1_Scapula_R
+      position: {x: -0.409232, y: -8.5265126e-16, z: -4.5474734e-15}
+      rotation: {x: -0.5496986, y: -0.041104045, z: 0.09586865, w: -0.8288251}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Elbow_R
+      parentName: Hive_Mind_Idle_1_Shoulder_R
+      position: {x: -1.0837419, y: 0, z: 1.1368684e-15}
+      rotation: {x: 0.022633372, y: -0.038438357, z: -0.015005866, w: 0.99889195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Wrist_R
+      parentName: Hive_Mind_Idle_1_Elbow_R
+      position: {x: -1.0425078, y: -1.7053025e-15, z: -1.6484591e-14}
+      rotation: {x: -0.535055, y: -0.0025414017, z: -0.3194273, w: 0.78209716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger1_R
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.42415702, y: -0.006395022, z: -0.0009816119}
+      rotation: {x: 0.17415361, y: -0.058344025, z: 0.019138144, w: 0.9828023}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger2_R
+      parentName: Hive_Mind_Idle_1_MiddleFinger1_R
+      position: {x: -0.18586828, y: -8.5265126e-16, z: -1.1368684e-15}
+      rotation: {x: -0.01577705, y: -0.0074966494, z: -0.0010442714, w: 0.9998469}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger3_R
+      parentName: Hive_Mind_Idle_1_MiddleFinger2_R
+      position: {x: -0.12147798, y: -4.192202e-15, z: 5.684342e-16}
+      rotation: {x: 0.0004781409, y: -0.020754201, z: -0.0000075601256, w: 0.99978447}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger4_R
+      parentName: Hive_Mind_Idle_1_MiddleFinger3_R
+      position: {x: -0.1673608, y: 3.5860204e-16, z: 1.4921397e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger1_R
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.12101592, y: 0.15246727, z: -0.025827333}
+      rotation: {x: -0.29782617, y: 0.16151896, z: -0.3186087, w: 0.88526815}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger2_R
+      parentName: Hive_Mind_Idle_1_ThumbFinger1_R
+      position: {x: -0.10941252, y: 3.410605e-15, z: 7.105427e-17}
+      rotation: {x: -0.09295612, y: -0.027948525, z: 0.005135368, w: 0.99526465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger3_R
+      parentName: Hive_Mind_Idle_1_ThumbFinger2_R
+      position: {x: -0.14495242, y: 0, z: -1.9895197e-15}
+      rotation: {x: -0.0049806368, y: -0.030545726, z: -0.0013043992, w: 0.9995202}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger4_R
+      parentName: Hive_Mind_Idle_1_ThumbFinger3_R
+      position: {x: -0.16169533, y: 3.126388e-15, z: 2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger1_R
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.4441041, y: 0.10019006, z: -0.012120776}
+      rotation: {x: 0.10430537, y: -0.5115307, z: 0.05992262, w: 0.8508032}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger2_R
+      parentName: Hive_Mind_Idle_1_IndexFinger1_R
+      position: {x: -0.16074467, y: 0, z: -5.6843415e-15}
+      rotation: {x: -0.035372708, y: -0.7472636, z: -0.11409092, w: 0.65370417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger3_R
+      parentName: Hive_Mind_Idle_1_IndexFinger2_R
+      position: {x: -0.12009543, y: 2.2737367e-15, z: 1.1368684e-15}
+      rotation: {x: -0.014206271, y: -0.4272995, z: 0.0037894184, w: 0.90399057}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger4_R
+      parentName: Hive_Mind_Idle_1_IndexFinger3_R
+      position: {x: -0.17672294, y: -4.6185276e-16, z: 1.0391687e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger1_R
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.3970521, y: -0.10465678, z: -0.023036238}
+      rotation: {x: 0.26194742, y: -0.057488073, z: 0.015350601, w: 0.9632461}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger2_R
+      parentName: Hive_Mind_Idle_1_RingFinger1_R
+      position: {x: -0.17355894, y: -8.5265126e-16, z: -2.2737367e-15}
+      rotation: {x: 0.050639145, y: -0.007353835, z: -0.0006500051, w: 0.9986897}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger3_R
+      parentName: Hive_Mind_Idle_1_RingFinger2_R
+      position: {x: -0.1317699, y: 4.2632563e-16, z: -5.4001247e-15}
+      rotation: {x: 0.006305055, y: -0.024155287, z: 0.000038599814, w: 0.9996884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger4_R
+      parentName: Hive_Mind_Idle_1_RingFinger3_R
+      position: {x: -0.16477817, y: -6.9277914e-16, z: -7.105427e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger1_R
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.36250013, y: -0.1815151, z: -0.08485169}
+      rotation: {x: 0.32189628, y: -0.059489075, z: 0.022081317, w: 0.9446461}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger2_R
+      parentName: Hive_Mind_Idle_1_PinkyFinger1_R
+      position: {x: -0.12702283, y: -1.7053025e-15, z: -3.410605e-15}
+      rotation: {x: 0.09476458, y: -0.005062649, z: -0.00026452346, w: 0.9954868}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger3_R
+      parentName: Hive_Mind_Idle_1_PinkyFinger2_R
+      position: {x: -0.15761739, y: -9.947598e-16, z: -2.9842794e-15}
+      rotation: {x: 0.015555486, y: -0.022908822, z: -0.00067041925, w: 0.9996163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger4_R
+      parentName: Hive_Mind_Idle_1_PinkyFinger3_R
+      position: {x: -0.15499143, y: -3.1974422e-16, z: -1.7053025e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_dagger_J
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.5389566, y: 0.112107724, z: -0.09477109}
+      rotation: {x: 0.6684042, y: 0.02586221, z: 0.70884234, w: -0.22385152}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_karambit1
+      parentName: Hive_Mind_Idle_1_Wrist_R
+      position: {x: -0.5026712, y: 0.078357235, z: -0.07976013}
+      rotation: {x: -0.26762104, y: 0.52363753, z: 0.8085672, w: -0.020044938}
+      scale: {x: 3.198849, y: 3.198849, z: 3.198849}
+    - name: Hive_Mind_Idle_1_Neck_M
+      parentName: Hive_Mind_Idle_1_Chest_M
+      position: {x: -0.569873, y: -2.842171e-16, z: 2.877698e-15}
+      rotation: {x: -0.001488292, y: -0.030375352, z: -0.048915356, w: 0.99833983}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Head_M
+      parentName: Hive_Mind_Idle_1_Neck_M
+      position: {x: -0.36536065, y: 1.7053025e-15, z: -4.2632563e-16}
+      rotation: {x: -0.003216125, y: 0.04497013, z: 0.07126493, w: 0.99643797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Helmet_M
+      parentName: Hive_Mind_Idle_1_Head_M
+      position: {x: -0.88471866, y: -2.8421708e-15, z: -7.704948e-16}
+      rotation: {x: 0, y: 0, z: 0.058292635, w: 0.99829954}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_HelmetEnd_M
+      parentName: Hive_Mind_Idle_1_Helmet_M
+      position: {x: -0.22671527, y: -1.0480505e-15, z: -4.037483e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Scapula_L
+      parentName: Hive_Mind_Idle_1_Chest_M
+      position: {x: -0.44370338, y: 0.26596755, z: 0.350617}
+      rotation: {x: 0.7141335, y: -0.007315059, z: 0.6653317, w: 0.2174707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Shoulder_L
+      parentName: Hive_Mind_Idle_1_Scapula_L
+      position: {x: 0.409232, y: 5.684342e-16, z: -2.8421708e-15}
+      rotation: {x: 0.5699655, y: 0.05375636, z: -0.0034366245, w: 0.81990105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Elbow_L
+      parentName: Hive_Mind_Idle_1_Shoulder_L
+      position: {x: 1.0837419, y: 5.684342e-16, z: -5.684342e-16}
+      rotation: {x: 0.018079238, y: -0.009259037, z: 0.008533118, w: 0.9997573}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Wrist_L
+      parentName: Hive_Mind_Idle_1_Elbow_L
+      position: {x: 1.0425078, y: -2.2737367e-15, z: 2.1032065e-14}
+      rotation: {x: -0.51736814, y: 0.0014446242, z: -0.22034581, w: 0.8269074}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger1_L
+      parentName: Hive_Mind_Idle_1_Wrist_L
+      position: {x: 0.42813656, y: 0.0028655624, z: -0.007547375}
+      rotation: {x: 0.17489193, y: -0.038950093, z: 0.0015592498, w: 0.98381567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger2_L
+      parentName: Hive_Mind_Idle_1_MiddleFinger1_L
+      position: {x: 0.18586828, y: 1.1368684e-15, z: -1.7053025e-15}
+      rotation: {x: 0.00034907457, y: -0.010325751, z: -0.0000047571953, w: 0.99994665}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger3_L
+      parentName: Hive_Mind_Idle_1_MiddleFinger2_L
+      position: {x: 0.12147798, y: 3.9790393e-15, z: 0}
+      rotation: {x: 0.00048964977, y: -0.0077942153, z: -0.0000030526649, w: 0.99996954}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_MiddleFinger4_L
+      parentName: Hive_Mind_Idle_1_MiddleFinger3_L
+      position: {x: 0.1673608, y: 1.7541523e-16, z: -1.4921397e-15}
+      rotation: {x: 0, y: -0.57478106, z: -0, w: 0.8183072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger1_L
+      parentName: Hive_Mind_Idle_1_Wrist_L
+      position: {x: 0.12101592, y: -0.15246727, z: 0.025827333}
+      rotation: {x: -0.46904606, y: 0.19596435, z: -0.27685755, w: 0.81544083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger2_L
+      parentName: Hive_Mind_Idle_1_ThumbFinger1_L
+      position: {x: 0.10941252, y: 0, z: 8.5265126e-16}
+      rotation: {x: -0.096642405, y: -0.034535028, z: 0.009131677, w: 0.99467796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger3_L
+      parentName: Hive_Mind_Idle_1_ThumbFinger2_L
+      position: {x: 0.14495242, y: -1.1368684e-15, z: 5.684342e-16}
+      rotation: {x: -0.003600529, y: -0.036283277, z: -0.0028742338, w: 0.99933094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ThumbFinger4_L
+      parentName: Hive_Mind_Idle_1_ThumbFinger3_L
+      position: {x: 0.16169533, y: 7.105427e-16, z: -1.1368684e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger1_L
+      parentName: Hive_Mind_Idle_1_Wrist_L
+      position: {x: 0.4303972, y: -0.10198034, z: 0.015858803}
+      rotation: {x: 0.07168089, y: -0.63407123, z: -0.016857201, w: 0.7697606}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger2_L
+      parentName: Hive_Mind_Idle_1_IndexFinger1_L
+      position: {x: 0.16074467, y: 0, z: 1.1368684e-15}
+      rotation: {x: 0.002519244, y: -0.6301194, z: 0.0028975098, w: 0.7764888}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger3_L
+      parentName: Hive_Mind_Idle_1_IndexFinger2_L
+      position: {x: 0.12009543, y: -1.7053025e-15, z: 0}
+      rotation: {x: -0.012926316, y: -0.6268384, z: 0.007006295, w: 0.77901065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_IndexFinger4_L
+      parentName: Hive_Mind_Idle_1_IndexFinger3_L
+      position: {x: 0.17672294, y: 1.2434498e-15, z: -2.3980816e-16}
+      rotation: {x: 0, y: -0.57478106, z: -0, w: 0.8183072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger1_L
+      parentName: Hive_Mind_Idle_1_Wrist_L
+      position: {x: 0.3987276, y: 0.10752234, z: 0.015488865}
+      rotation: {x: 0.22371373, y: -0.038049437, z: -0.0006433054, w: 0.9739117}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger2_L
+      parentName: Hive_Mind_Idle_1_RingFinger1_L
+      position: {x: 0.17355894, y: -2.842171e-16, z: 1.1368684e-15}
+      rotation: {x: -0.00048765523, y: -0.008679927, z: 0.000055570137, w: 0.9999622}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger3_L
+      parentName: Hive_Mind_Idle_1_RingFinger2_L
+      position: {x: 0.1317699, y: 0, z: 2.2737367e-15}
+      rotation: {x: 0.00716961, y: -0.012486927, z: -0.000015197822, w: 0.9998964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_RingFinger4_L
+      parentName: Hive_Mind_Idle_1_RingFinger3_L
+      position: {x: 0.16477817, y: 9.237055e-16, z: 8.5265126e-16}
+      rotation: {x: 0, y: -0.57478106, z: -0, w: 0.8183072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger1_L
+      parentName: Hive_Mind_Idle_1_Wrist_L
+      position: {x: 0.36417565, y: 0.18438067, z: 0.07730431}
+      rotation: {x: 0.2014634, y: -0.044763587, z: -0.000016085802, w: 0.9784727}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger2_L
+      parentName: Hive_Mind_Idle_1_PinkyFinger1_L
+      position: {x: 0.12702283, y: 2.842171e-16, z: -2.8421708e-15}
+      rotation: {x: 0.00038728112, y: -0.0014013572, z: -0.000009940936, w: 0.9999989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger3_L
+      parentName: Hive_Mind_Idle_1_PinkyFinger2_L
+      position: {x: 0.15761739, y: 1.7053025e-15, z: 2.2737367e-15}
+      rotation: {x: 0.013972291, y: -0.011243746, z: -0.00027474706, w: 0.9998391}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_PinkyFinger4_L
+      parentName: Hive_Mind_Idle_1_PinkyFinger3_L
+      position: {x: 0.15499143, y: 7.81597e-16, z: 1.4210854e-15}
+      rotation: {x: 0, y: -0.57478106, z: -0, w: 0.8183072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_karambit
+      parentName: Hive_Mind_Idle_1_Wrist_L
+      position: {x: 0.45819777, y: -0.10081146, z: 0.08584717}
+      rotation: {x: -0.18593614, y: 0.7138541, z: -0.5423603, w: 0.40210125}
+      scale: {x: 3.198849, y: 3.198849, z: 3.198849}
+    - name: Hive_Mind_Idle_1_Hip_L
+      parentName: Hive_Mind_Idle_1_Root_M
+      position: {x: 0.15778282, y: 0.022097075, z: 0.42799187}
+      rotation: {x: 0.98676264, y: -0.011155232, z: 0.020795105, w: -0.16044547}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Knee_L
+      parentName: Hive_Mind_Idle_1_Hip_L
+      position: {x: 1.4915024, y: -5.684342e-16, z: -4.973799e-16}
+      rotation: {x: -0.000925645, y: 0.001959574, z: 0.33742028, w: 0.94135165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Ankle_L
+      parentName: Hive_Mind_Idle_1_Knee_L
+      position: {x: 1.8081548, y: -1.2789769e-15, z: -2.0605738e-14}
+      rotation: {x: -0.009838727, y: -0.020647256, z: -0.3064862, w: 0.9516003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_Toes_L
+      parentName: Hive_Mind_Idle_1_Ankle_L
+      position: {x: 0.48367962, y: -0.51607454, z: -7.8870245e-15}
+      rotation: {x: -0.022518663, y: 0.0062537505, z: -0.6709589, w: 0.74112624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hive_Mind_Idle_1_ToesEnd_L
+      parentName: Hive_Mind_Idle_1_Toes_L
+      position: {x: 0.44556734, y: 3.7303492e-16, z: 9.795518e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

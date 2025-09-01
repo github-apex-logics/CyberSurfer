@@ -1,0 +1,1927 @@
+fileFormatVersion: 2
+guid: ca6673ee29d976b4c9fb6c2d88dbb105
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 65
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3735
+        width: 599
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5262d3f0dbdcfb24ea5d1bcd61fcc139
+      internalID: -1520595828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_2
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 3933
+        width: 194
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea6c50393bc3de43b5d47743c831ff9
+      internalID: 1177706058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_3
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 3941
+        width: 364
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f353dc7d987464093fd9687ba2ef92
+      internalID: -1953875677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_5
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 3459
+        width: 564
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63c53ad205b2c141b6176596a174f84
+      internalID: -604289897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_6
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 3856
+        width: 437
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8c27cdd86c0e1468c3b3290f42e6ca
+      internalID: -1809885271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 3581
+        width: 920
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b5d728742821e4eab0c6626fa72e84
+      internalID: 1976957667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_13
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3351
+        width: 325
+        height: 682
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804b16d48dd48194487c52fee1d16663
+      internalID: -911141638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3564
+        width: 143
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d918a2222713e0448846eafbd77594bf
+      internalID: 1061512230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_15
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 3397
+        width: 532
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471dde3a3d2ff3f44ab6e6c42c8cf8b5
+      internalID: -629780895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_16
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 3563
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cddc32816c9704cb566355705e5ae2
+      internalID: 1984668862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_17
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3598
+        width: 500
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaaab7dd54717e4fbe980e0cf74d778
+      internalID: -1746409075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_18
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3397
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b00c0993a7ebe84a9b2cf143b978ff1
+      internalID: -721609606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3016
+        width: 411
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbe392edf03bb64790609146e6e9032
+      internalID: 417831450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_20
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 3016
+        width: 411
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415907b38f24bb241914ba4c11a51fb0
+      internalID: 971683624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3130
+        width: 579
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53292e02738de64fab06febb03e6f50
+      internalID: 1773861640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_22
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 3143
+        width: 104
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1874a6974aa30d743abaaf7c35169d7e
+      internalID: 1589173101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_23
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2808
+        width: 966
+        height: 479
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d76b2b608f5684fa01cc5bb9ef5045
+      internalID: 521519829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_24
+      rect:
+        serializedVersion: 2
+        x: 3089
+        y: 2809
+        width: 966
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bab6fc7906e1a34d8449cfbb50dc287
+      internalID: 437184139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2933
+        width: 414
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b39d01aa93ce74fbd1e98b64da6d89
+      internalID: 542143672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_27
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2807
+        width: 195
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccdfa6bb7c5fc74092a3e8dfb880150
+      internalID: -174043440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_28
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2656
+        width: 457
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 41, z: 50, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547ba9044d25f414ba06e14a25f685cc
+      internalID: -418068768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_30
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2686
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917441f04b2883841b2fa8d1e2bee618
+      internalID: 693077554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_31
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 2354
+        width: 358
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fb71e33dd34e64f945d822700be4ff
+      internalID: 1363073219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_32
+      rect:
+        serializedVersion: 2
+        x: 2762
+        y: 2498
+        width: 215
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49999a9422b8a9349905e8cc1faa8384
+      internalID: -1791963142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_33
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 2490
+        width: 230
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61a4f75bbc66f546bb0dc2d33b46ed1
+      internalID: -1871606592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_34
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 2490
+        width: 242
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592d83d70ca3ec24c9dffb98b0d5c5b6
+      internalID: -631135482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_35
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 2490
+        width: 230
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41bef3e64735e142a77a1faa66c67c2
+      internalID: -1706835411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_36
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 2487
+        width: 254
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9fbb3e635e3c54baa61f292512fa37
+      internalID: 745699474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_37
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1953
+        width: 1080
+        height: 651
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a5fcd30aa5a8c4696e91b446ddde98
+      internalID: -1022674509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_38
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 1157
+        width: 1503
+        height: 1085
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99485970d8942384c8d20761b7c94fbf
+      internalID: 548972847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_39
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1769
+        width: 200
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225ee3587294d074b912e9b417467e6c
+      internalID: -187850741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_40
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1769
+        width: 202
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4dc6edc1cb8f647a8bfad30043d50f
+      internalID: 2078086211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_41
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1769
+        width: 202
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24e1be32ad7bbb4aaa7485448333442
+      internalID: -802163400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1672
+        width: 622
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519d4010d3e1bd04681187634fc77c5d
+      internalID: 2115824902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_43
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1599
+        width: 620
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf87a39581171545aaf58b9c13294a4
+      internalID: 1176492082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_44
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1597
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055405bb8576c9c4bb8a53d9e7440d50
+      internalID: -942623223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_45
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1391
+        width: 700
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c55304f14f2cf9469610220a629cb8d
+      internalID: 176513421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_46
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1242
+        width: 664
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 21, y: 17, z: 28, w: 15}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac4d7ed8c04b3340aaac376d97efeb4
+      internalID: 859990358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_47
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1130
+        width: 462
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 20, z: 66, w: 23}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3241b857ec0c841b05f919e00506bd
+      internalID: 1980785979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_48
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 999
+        width: 421
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2f1d1a4ba91ae41b05cf72023cc902
+      internalID: -1110829761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_49
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 999
+        width: 422
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30045923ee6916a47a032416fdea541d
+      internalID: -451854411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_50
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 20
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677a79d7439a97e47b022e89346d33c3
+      internalID: -362426702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_51
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 832
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25956afb2eeaac4c9a00b32055eb1f2
+      internalID: 1037484916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_52
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 816
+        width: 525
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f4f7e5f1892e84c831cfd36dfaee5a
+      internalID: 284557956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_53
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 582
+        width: 556
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225b4f8ce7643f24b96e0a927398d4f8
+      internalID: -2118847212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_54
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 592
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521e02e6090c93842b9cced2cf5d45a8
+      internalID: -1912853313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_55
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 419
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b4df2cb6307784cb970b647e121d8d
+      internalID: -239057757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_56
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 426
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9369306aeb0eb664aa0ecec4695bf901
+      internalID: -996173145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_57
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 404
+        width: 461
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd22921fb53b1fd48a9201c46880059b
+      internalID: 1565919942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_58
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 168
+        width: 556
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 225, y: 0, z: 222, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba86ead4b79db4fadfaa5a44b6513e
+      internalID: 595821631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_59
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 179
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fda755c9c952d84e8afcae4a53e3d67
+      internalID: -165409969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 2077
+        width: 325
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad1c6fb791b3cd4ea34021c8b678070
+      internalID: -1776553365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 2077
+        width: 325
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c819bba8fe9f0d43a560d6a5f393187
+      internalID: -1142401113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 2077
+        width: 325
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5337696797fafd546a024e382cd5dbe3
+      internalID: 1651206481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_8
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 2695
+        width: 1279
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ffb72fccf3f234e9b58c40a70cd566
+      internalID: 741321925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 425
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c584d12ebb9eb499904e5b6d736f41
+      internalID: 1527312599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_10
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1268
+        width: 146
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc07c4c4b889ccc4381fa1255dfca6a8
+      internalID: -112654890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 595
+        width: 522
+        height: 522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f38d1c1e52be5e4694d127a5e97c279
+      internalID: -1314703911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_26
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 204
+        width: 102
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38316c8de4d4184fbe5d007ae69cd5f
+      internalID: 1617561482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_29
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 182
+        width: 129
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fd71724b26052408feb6e1cdc0fd8d
+      internalID: -1533971936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_60
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 193
+        width: 97
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3486ed658be843c4bbb813a19804d1e3
+      internalID: -1433799103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_61
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 203
+        width: 102
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a64b81fc7b335d43b3d0f5da6c7a81f
+      internalID: -984882526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_62
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 182
+        width: 129
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7092ddb99271643b93957eedbf4945
+      internalID: -1144155606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_63
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 192
+        width: 97
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a45b13c965d9f94e8904da8ffa71efd
+      internalID: 1775058330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_64
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1763
+        width: 280
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bc2e1b2911afc4991cde52a84eb651
+      internalID: -953785947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_65
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1664
+        width: 698
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c2e8b74985e6840a29e2b95ad55df1
+      internalID: 71570912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_66
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1645
+        width: 7
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41aeb163ad5cb44b95ba5906ee0a12d
+      internalID: -1551251932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_67
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 1648
+        width: 6
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd53d5fcc6e8f74ca7573457a58e63c
+      internalID: -1498906021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_68
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1586
+        width: 698
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db0b4b50eacecd48afbc9a20e918673
+      internalID: -1317345913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_69
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1586
+        width: 91
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eed1f72a19a042438a973155b9fca6d
+      internalID: -2133840050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_70
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1488
+        width: 698
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef46d9929541c74092595e3834cee8a
+      internalID: -123892851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_71
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 1488
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc856f37f54ed34697597c355b94869
+      internalID: 950631347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_72
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1249
+        width: 366
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f22aa61f3e92945a65f7f5c0e4e32b
+      internalID: 1661002287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_73
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 1233
+        width: 194
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ae43bcc519774aa07f84865bbdf68
+      internalID: -46397005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_74
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 1109
+        width: 194
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67aad9f224995e741bad89710e2d7dcb
+      internalID: 869782137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_75
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 424
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ac29b79caff024f8f400932264c495
+      internalID: -836401093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyber-Surface-sprite_76
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 616
+        width: 121
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8acf3b01db1ce4882a4c64a018650b
+      internalID: 1042205842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ccf2c8be9bb625d43b3f1a180d29eb12
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cyber-Surface-sprite_0: -1520595828
+      Cyber-Surface-sprite_1: -1776553365
+      Cyber-Surface-sprite_10: -112654890
+      Cyber-Surface-sprite_11: -1314703911
+      Cyber-Surface-sprite_12: 1976957667
+      Cyber-Surface-sprite_13: -911141638
+      Cyber-Surface-sprite_14: 1061512230
+      Cyber-Surface-sprite_15: -629780895
+      Cyber-Surface-sprite_16: 1984668862
+      Cyber-Surface-sprite_17: -1746409075
+      Cyber-Surface-sprite_18: -721609606
+      Cyber-Surface-sprite_19: 417831450
+      Cyber-Surface-sprite_2: 1177706058
+      Cyber-Surface-sprite_20: 971683624
+      Cyber-Surface-sprite_21: 1773861640
+      Cyber-Surface-sprite_22: 1589173101
+      Cyber-Surface-sprite_23: 521519829
+      Cyber-Surface-sprite_24: 437184139
+      Cyber-Surface-sprite_25: 542143672
+      Cyber-Surface-sprite_26: 1617561482
+      Cyber-Surface-sprite_27: -174043440
+      Cyber-Surface-sprite_28: -418068768
+      Cyber-Surface-sprite_29: -1533971936
+      Cyber-Surface-sprite_3: -1953875677
+      Cyber-Surface-sprite_30: 693077554
+      Cyber-Surface-sprite_31: 1363073219
+      Cyber-Surface-sprite_32: -1791963142
+      Cyber-Surface-sprite_33: -1871606592
+      Cyber-Surface-sprite_34: -631135482
+      Cyber-Surface-sprite_35: -1706835411
+      Cyber-Surface-sprite_36: 745699474
+      Cyber-Surface-sprite_37: -1022674509
+      Cyber-Surface-sprite_38: 548972847
+      Cyber-Surface-sprite_39: -187850741
+      Cyber-Surface-sprite_4: -1142401113
+      Cyber-Surface-sprite_40: 2078086211
+      Cyber-Surface-sprite_41: -802163400
+      Cyber-Surface-sprite_42: 2115824902
+      Cyber-Surface-sprite_43: 1176492082
+      Cyber-Surface-sprite_44: -942623223
+      Cyber-Surface-sprite_45: 176513421
+      Cyber-Surface-sprite_46: 859990358
+      Cyber-Surface-sprite_47: 1980785979
+      Cyber-Surface-sprite_48: -1110829761
+      Cyber-Surface-sprite_49: -451854411
+      Cyber-Surface-sprite_5: -604289897
+      Cyber-Surface-sprite_50: -362426702
+      Cyber-Surface-sprite_51: 1037484916
+      Cyber-Surface-sprite_52: 284557956
+      Cyber-Surface-sprite_53: -2118847212
+      Cyber-Surface-sprite_54: -1912853313
+      Cyber-Surface-sprite_55: -239057757
+      Cyber-Surface-sprite_56: -996173145
+      Cyber-Surface-sprite_57: 1565919942
+      Cyber-Surface-sprite_58: 595821631
+      Cyber-Surface-sprite_59: -165409969
+      Cyber-Surface-sprite_6: -1809885271
+      Cyber-Surface-sprite_60: -1433799103
+      Cyber-Surface-sprite_61: -984882526
+      Cyber-Surface-sprite_62: -1144155606
+      Cyber-Surface-sprite_63: 1775058330
+      Cyber-Surface-sprite_64: -953785947
+      Cyber-Surface-sprite_65: 71570912
+      Cyber-Surface-sprite_66: -1551251932
+      Cyber-Surface-sprite_67: -1498906021
+      Cyber-Surface-sprite_68: -1317345913
+      Cyber-Surface-sprite_69: -2133840050
+      Cyber-Surface-sprite_7: 1651206481
+      Cyber-Surface-sprite_70: -123892851
+      Cyber-Surface-sprite_71: 950631347
+      Cyber-Surface-sprite_72: 1661002287
+      Cyber-Surface-sprite_73: -46397005
+      Cyber-Surface-sprite_74: 869782137
+      Cyber-Surface-sprite_75: -836401093
+      Cyber-Surface-sprite_76: 1042205842
+      Cyber-Surface-sprite_8: 741321925
+      Cyber-Surface-sprite_9: 1527312599
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

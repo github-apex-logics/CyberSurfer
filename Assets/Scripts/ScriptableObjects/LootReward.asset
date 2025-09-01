@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f800b70dc3897f4780fb3c7636fe755, type: 3}
+  m_Name: LootReward
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - rewardName: LootBox
+    icon: {fileID: 21300000, guid: 723237686b676bc49b0c468f47855961, type: 3}
+    rewardType: 0
+    lootType: 0
+    amount: 1
+    isReward: 1
+  - rewardName: RareLootBox
+    icon: {fileID: 21300000, guid: d5eb7cd33d4cca14191e024cac5ae325, type: 3}
+    rewardType: 1
+    lootType: 0
+    amount: 1
+    isReward: 1
+  - rewardName: Key
+    icon: {fileID: 21300000, guid: c1c7c0c31d31f4b48868d8e2fe62b867, type: 3}
+    rewardType: 2
+    lootType: 0
+    amount: 1
+    isReward: 1
+  - rewardName: RareKey
+    icon: {fileID: 21300000, guid: 0ad59070c5332154eb986cdca3605771, type: 3}
+    rewardType: 3
+    lootType: 0
+    amount: 1
+    isReward: 1

@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d675244480d61604cba375182f6cba3e, type: 3}
+  m_Name: WeaponDatabase
+  m_EditorClassIdentifier: 
+  weapons:
+  - weaponName: Basic
+    id: 1
+    icon: {fileID: 21300000, guid: 1e65d741fa5243e43ab0767c064f3777, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 6dcaab3cb1854ac4b8c1e14b00b85727, type: 3}
+    emission_texture: {fileID: 2800000, guid: 6dcaab3cb1854ac4b8c1e14b00b85727, type: 3}
+    state: 1
+  - weaponName: Yellow
+    id: 2
+    icon: {fileID: 21300000, guid: 60ca15a6c2b5d4145b6bde3e0709fce2, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 7e3b345e4cde44548ba35c12dab51076, type: 3}
+    emission_texture: {fileID: 2800000, guid: 7e3b345e4cde44548ba35c12dab51076, type: 3}
+    state: 1
+  - weaponName: Red
+    id: 3
+    icon: {fileID: 21300000, guid: e7169fc47b34b9844ac2ccbe8749e8e1, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: ed06b148f030b3f4ba06e2ab32849bca, type: 3}
+    emission_texture: {fileID: 2800000, guid: ed06b148f030b3f4ba06e2ab32849bca, type: 3}
+    state: 0
+  - weaponName: Purple
+    id: 4
+    icon: {fileID: 21300000, guid: a0de917bf524ba846b03352a695f85fe, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: f6f8adcc693c2a346b1cb8e4f05cf093, type: 3}
+    emission_texture: {fileID: 2800000, guid: f6f8adcc693c2a346b1cb8e4f05cf093, type: 3}
+    state: 0
+  - weaponName: Pink
+    id: 5
+    icon: {fileID: 21300000, guid: 5430e5b83ccac014591752652a3a7d09, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 4778510eaa46f834c9749d64728ed0e1, type: 3}
+    emission_texture: {fileID: 2800000, guid: 4778510eaa46f834c9749d64728ed0e1, type: 3}
+    state: 0
+  - weaponName: Orange
+    id: 6
+    icon: {fileID: 21300000, guid: 170c927fd2f33a244b507b1c43b86bc8, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 94c4e8407181f0d4183679d0c47087bf, type: 3}
+    emission_texture: {fileID: 2800000, guid: 94c4e8407181f0d4183679d0c47087bf, type: 3}
+    state: 1
+  - weaponName: Green
+    id: 7
+    icon: {fileID: 21300000, guid: 71347d39106f42443acb5aa1f2690939, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: e2117c35d00bac549b62ce0df0ac1cd2, type: 3}
+    emission_texture: {fileID: 2800000, guid: e2117c35d00bac549b62ce0df0ac1cd2, type: 3}
+    state: 0
+  - weaponName: Cyan
+    id: 8
+    icon: {fileID: 21300000, guid: 866d6f6a4ca2c4145a8fe9252aec4f27, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 010d8fcdd40255142844c704591fed2d, type: 3}
+    emission_texture: {fileID: 2800000, guid: 010d8fcdd40255142844c704591fed2d, type: 3}
+    state: 0
+  - weaponName: Brown
+    id: 9
+    icon: {fileID: 21300000, guid: e3a24749069304e49829c8e7faf023ed, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 6e60bac312b3e5d459a159726d3f4fe5, type: 3}
+    emission_texture: {fileID: 2800000, guid: 6e60bac312b3e5d459a159726d3f4fe5, type: 3}
+    state: 0
+  - weaponName: Blue
+    id: 10
+    icon: {fileID: 21300000, guid: 5611e697e605b5947815a46baeac6d1b, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 37d538a195da37e479e6e1c080993543, type: 3}
+    emission_texture: {fileID: 2800000, guid: 37d538a195da37e479e6e1c080993543, type: 3}
+    state: 2
+  - weaponName: Neon
+    id: 11
+    icon: {fileID: 21300000, guid: 3cc3a929c89f50546a9b0cd006f5f441, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: c5414a8b5e347fb419803411fd9afc20, type: 3}
+    emission_texture: {fileID: 2800000, guid: c5414a8b5e347fb419803411fd9afc20, type: 3}
+    state: 0
+  - weaponName: Jaguar
+    id: 12
+    icon: {fileID: 21300000, guid: 2e13aa832580e9b488e29db9563d2acc, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 2307c59bf9c3b6e438c2ee95641ab894, type: 3}
+    emission_texture: {fileID: 2800000, guid: 2307c59bf9c3b6e438c2ee95641ab894, type: 3}
+    state: 0
+  - weaponName: Peacock
+    id: 13
+    icon: {fileID: 21300000, guid: 64cd2f3e31c605e47944e6127d15b188, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 9ede0d73fab81c342bcb88a1e6bba282, type: 3}
+    emission_texture: {fileID: 2800000, guid: 9ede0d73fab81c342bcb88a1e6bba282, type: 3}
+    state: 0
+  - weaponName: Blossom
+    id: 14
+    icon: {fileID: 21300000, guid: 08bfa0f0b6dbc294ba920ed6d76cdac1, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 485caa0ff44ca4b459ec9ccf1df084a2, type: 3}
+    emission_texture: {fileID: 2800000, guid: 485caa0ff44ca4b459ec9ccf1df084a2, type: 3}
+    state: 0
+  - weaponName: Chameleon
+    id: 15
+    icon: {fileID: 21300000, guid: 3567d71141ac42a479cd01209f0dd77c, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: a7d27dedba6b61a4488dd65d37ff955e, type: 3}
+    emission_texture: {fileID: 2800000, guid: a7d27dedba6b61a4488dd65d37ff955e, type: 3}
+    state: 0
+  - weaponName: 8-Bit
+    id: 16
+    icon: {fileID: 21300000, guid: dad323e56cade724283e9daee8d2932b, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: e63eb78012c7dda4697b37410e30722a, type: 3}
+    emission_texture: {fileID: 2800000, guid: e63eb78012c7dda4697b37410e30722a, type: 3}
+    state: 0
+  - weaponName: Game Boy 8-Bit
+    id: 17
+    icon: {fileID: 21300000, guid: e2a83e05ccd0d3f4ebcc78bbb9383b05, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: e75fd960d5da7494f895d3f71a6db115, type: 3}
+    emission_texture: {fileID: 2800000, guid: e75fd960d5da7494f895d3f71a6db115, type: 3}
+    state: 0
+  - weaponName: RubberWarning
+    id: 18
+    icon: {fileID: 21300000, guid: 97486f4fbda2a5d4cbf8e0091008e03c, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 4b1d699a42fbcab4db950341acd69d17, type: 3}
+    emission_texture: {fileID: 2800000, guid: 4b1d699a42fbcab4db950341acd69d17, type: 3}
+    state: 0
+  - weaponName: HellFire
+    id: 19
+    icon: {fileID: 21300000, guid: ac222d12f87012f46a48dfdb7fa93f2b, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: d0bb0858cfd78ee4ea275b8506a6977c, type: 3}
+    emission_texture: {fileID: 2800000, guid: d0bb0858cfd78ee4ea275b8506a6977c, type: 3}
+    state: 0
+  - weaponName: Galactic
+    id: 20
+    icon: {fileID: 21300000, guid: 497835d2ed67da0459c85ac8ec6592d7, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 70ca6656227b60b40abca0a6a1821310, type: 3}
+    emission_texture: {fileID: 2800000, guid: c45822f9dac51844abf9a0c94d3c1b41, type: 3}
+    state: 0
+  - weaponName: Ice
+    id: 21
+    icon: {fileID: 21300000, guid: ac709d0aed78e124da07c13c9443e9dc, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: f6cd4b1f809ff6741a34367674135d38, type: 3}
+    emission_texture: {fileID: 2800000, guid: e1e2d938499405d4d86d716788c39186, type: 3}
+    state: 0
+  - weaponName: Fire
+    id: 22
+    icon: {fileID: 21300000, guid: f5465fd3662395e48becd0a9f71edac5, type: 3}
+    price: 100
+    base_texture: {fileID: 2800000, guid: 991a71cebfba79b42bfb9f185628050c, type: 3}
+    emission_texture: {fileID: 2800000, guid: d0c620a873f6fc5408fc798f79894cef, type: 3}
+    state: 0
