@@ -1,10 +1,11 @@
 using Fusion;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerDataManager : NetworkBehaviour
 {
-    public static PlayerDataManager Instance;
+    public static PlayerDataManager instance;
     public PlayerDataSO playerDataSo;
 
     [Networked]
@@ -12,16 +13,20 @@ public class PlayerDataManager : NetworkBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
+        if (instance == null)
         {
-            Instance = this;
-            DontDestroyOnLoad(Instance);
+            instance = this;
+            SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetSceneByName("DontDestroyOnLoad"));
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
-            Destroy(Instance);
+            Destroy(this.gameObject);
         }
-
+        playerDataSo.playerNames[0] = "";
+        playerDataSo.playerNames[1] = "";
+        playerDataSo.playerNames[2] = "";
+        playerDataSo.playerNames[3] = "";
 
     }
 
@@ -31,6 +36,11 @@ public class PlayerDataManager : NetworkBehaviour
     public override void Spawned()
     {
         _isSpawned = true;
+        //if (Object.HasStateAuthority)
+        //{
+        //    Object.Flags |= NetworkObjectFlags.DontDestroyOnLoad();
+        //    // This makes the NetworkObject survive scene changes in Fusion 2
+        //}
     }
 
 
@@ -54,11 +64,11 @@ public class PlayerDataManager : NetworkBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            if (i == player.PlayerId)
+            if (i == (player.PlayerId - 1))
             {
                 playerDataSo.playerNames[i] = name;
             }
-        
+
         }
     }
 
@@ -92,5 +102,6 @@ public class PlayerDataManager : NetworkBehaviour
     private void RPC_RequestSetPlayerName(PlayerRef player, string name)
     {
         playerNames.Set(player, name);
+       
     }
 }

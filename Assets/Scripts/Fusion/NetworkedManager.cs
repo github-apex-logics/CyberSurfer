@@ -26,6 +26,8 @@ public class NetworkedManager : NetworkBehaviour
     public TMP_Text raceTimerTxt;
     public Transform finish;
 
+    public PlayerDataSO playerDataSo;
+
     [Networked] public bool startGame { get; set; }
     [Networked] public float gameSpeed { get; set; } = 1f;
 
@@ -34,7 +36,7 @@ public class NetworkedManager : NetworkBehaviour
     /// </summary>
     public TextMeshProUGUI leaderboardText;
 
-
+   public PlayerDataManager playerDataManager;
 
     // public TextMeshProUGUI leaderboardText;
     private List<CyberNetworkController> players = new();
@@ -46,7 +48,7 @@ public class NetworkedManager : NetworkBehaviour
     {
         Instance = this;
         _myrunner = FindAnyObjectByType<NetworkRunner>();
-
+        playerDataManager = FindAnyObjectByType<PlayerDataManager>();
 
 
         if (Object.HasStateAuthority)
@@ -77,10 +79,13 @@ public class NetworkedManager : NetworkBehaviour
         leaderboardText.text = "";
         for (int i = 0; i < players.Count; i++)
         {
-            string name = PlayerDataManager.Instance.GetPlayerName(players[i].Object.InputAuthority);
+            string name = playerDataManager.GetPlayerName(players[i].Object.InputAuthority);
+          //  string name = playerDataSo.playerNames[players[i].Object.InputAuthority.PlayerId];
             leaderboardText.text += $"{i + 1}:  {name}\n";
         }
     }
+
+
 
 
     public override void FixedUpdateNetwork()

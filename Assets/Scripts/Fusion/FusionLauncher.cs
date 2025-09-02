@@ -85,11 +85,13 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
         var result = await runnerInstance.StartGame(new StartGameArgs()
         {
             GameMode = GameMode.AutoHostOrClient,
+            //GameMode = GameMode.Shared,
             SessionName = "RaceRoom",
             Scene = sceneRef,
             SceneManager = runnerInstance.GetComponent<NetworkSceneManagerDefault>(),
             AuthValues = auth,
             CustomPhotonAppSettings = appSettings,
+           
 
         });
 
@@ -205,10 +207,7 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
         runnerInstance.SessionInfo.IsVisible = false;
 
         int raceSceneIndex = mapSelect;
-        runnerInstance.LoadScene(
-            SceneRef.FromIndex(raceSceneIndex),
-            new LoadSceneParameters(LoadSceneMode.Single)
-        );
+        runnerInstance.LoadScene(SceneRef.FromIndex(raceSceneIndex), new LoadSceneParameters(LoadSceneMode.Single));
 
         startButton.interactable = false;
     }
@@ -317,15 +316,16 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
 
         if (playerEntries.TryGetValue(player, out var entry))
         {
-            if (player != null)
+            if (entry != null && entry.gameObject != null)
             {
                 Destroy(entry.gameObject);
-                playerEntries.Remove(player);
             }
+            playerEntries.Remove(player);
         }
-
-        UpdateStartButtonState();
+        if (runnerInstance.IsServer)
+            UpdateStartButtonState();
     }
+
     public void Leave()
     {
 
@@ -344,7 +344,7 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
         // Only the server/host can start the game and only when all players are present
 
         bool allJoined = (runnerInstance.IsServer && playerEntries.Count == maxPlayers);
-        
+       // bool allJoined = (runnerInstance.IsSharedModeMasterClient && playerEntries.Count == maxPlayers);
 
         startButton.interactable = allJoined;
         startButton.gameObject.SetActive(allJoined);

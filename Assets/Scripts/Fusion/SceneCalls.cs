@@ -84,73 +84,73 @@ public class SceneCalls : NetworkBehaviour, INetworkRunnerCallbacks
     public async void OnHostMigration(NetworkRunner runner, HostMigrationToken token)
     {
         // Shut down old runner with the specific reason so your OnShutdown can branch if needed
-        await runner.Shutdown(shutdownReason: ShutdownReason.HostMigration);
+        //await runner.Shutdown(shutdownReason: ShutdownReason.HostMigration);
 
-        // Create the new runner (e.g., from a prefab you keep around)
-        var newRunner = Instantiate(_myrunner);
+        //// Create the new runner (e.g., from a prefab you keep around)
+        //var newRunner = Instantiate(_myrunner);
 
-        // Start with HostMigration args
-        var result = await newRunner.StartGame(new StartGameArgs
-        {
-            HostMigrationToken = token,
-            HostMigrationResume = HostMigrationResume,
-            // ... your other args (Scene, SessionProps, etc.)
-        });
+        //// Start with HostMigration args
+        //var result = await newRunner.StartGame(new StartGameArgs
+        //{
+        //    HostMigrationToken = token,
+        //    HostMigrationResume = HostMigrationResume,
+        //    // ... your other args (Scene, SessionProps, etc.)
+        //});
 
-        if (!result.Ok)
-            Debug.LogWarning(result.ShutdownReason);
-        else
-            Debug.Log("Host migration complete.");
+        //if (!result.Ok)
+        //    Debug.LogWarning(result.ShutdownReason);
+        //else
+        //    Debug.Log("Host migration complete.");
     }
 
     // Step 3
-    void HostMigrationResume(NetworkRunner runner)
-    {
-        // Recreate NOs from the last pushed snapshot
-        foreach (var resumeNO in runner.GetResumeSnapshotNetworkObjects())
-        {
-            // Default pose
-            Vector3 pos = default;
-            Quaternion rot = default;
-            bool haveTRSP = false;
+    //void HostMigrationResume(NetworkRunner runner)
+    //{
+    //    // Recreate NOs from the last pushed snapshot
+    //    foreach (var resumeNO in runner.GetResumeSnapshotNetworkObjects())
+    //    {
+    //        // Default pose
+    //        Vector3 pos = default;
+    //        Quaternion rot = default;
+    //        bool haveTRSP = false;
 
-            // In Fusion 2, use NetworkTRSP (or NetworkTransform) to read spatial state
-            if (resumeNO.TryGetBehaviour<NetworkTRSP>(out var trsp))
-            {
-                // State is a ref NetworkTRSPData containing Position/Rotation/Scale/Parent
-                var data = trsp.Data;
-                pos = data.Position;
-                rot = data.Rotation;
-                haveTRSP = true;
-            }
-            else if (resumeNO.TryGetBehaviour<NetworkTransform>(out var ntx))
-            {
-                var data = ntx.Data;
-                pos = data.Position;
-                rot = data.Rotation;
-                haveTRSP = true;
-            }
+    //        // In Fusion 2, use NetworkTRSP (or NetworkTransform) to read spatial state
+    //        if (resumeNO.TryGetBehaviour<NetworkTRSP>(out var trsp))
+    //        {
+    //            // State is a ref NetworkTRSPData containing Position/Rotation/Scale/Parent
+    //            var data = trsp.Data;
+    //            pos = data.Position;
+    //            rot = data.Rotation;
+    //            haveTRSP = true;
+    //        }
+    //        else if (resumeNO.TryGetBehaviour<NetworkTransform>(out var ntx))
+    //        {
+    //            var data = ntx.Data;
+    //            pos = data.Position;
+    //            rot = data.Rotation;
+    //            haveTRSP = true;
+    //        }
 
-            runner.Spawn(
-              resumeNO,
-              position: haveTRSP ? pos : default,
-              rotation: haveTRSP ? rot : default,
-              onBeforeSpawned: (r, newNO) =>
-              {
-                  // Copy full state from snapshot object to the freshly spawned one
-                  newNO.CopyStateFrom(resumeNO);
+    //        runner.Spawn(
+    //          resumeNO,
+    //          position: haveTRSP ? pos : default,
+    //          rotation: haveTRSP ? rot : default,
+    //          onBeforeSpawned: (r, newNO) =>
+    //          {
+    //              // Copy full state from snapshot object to the freshly spawned one
+    //              newNO.CopyStateFrom(resumeNO);
 
-                  // Optionally copy specific behaviours only
-                  //if (resumeNO.TryGetBehaviour<MyCustomNetworkBehaviour>(out var oldB))
-                  //{
-                  //    var newB = newNO.GetComponent<MyCustomNetworkBehaviour>();
-                  //    if (newB != null) newB.CopyStateFrom(oldB);
-                  //}
-              }
-            );
-        }
+    //              // Optionally copy specific behaviours only
+    //              //if (resumeNO.TryGetBehaviour<MyCustomNetworkBehaviour>(out var oldB))
+    //              //{
+    //              //    var newB = newNO.GetComponent<MyCustomNetworkBehaviour>();
+    //              //    if (newB != null) newB.CopyStateFrom(oldB);
+    //              //}
+    //          }
+    //        );
+    //    }
 
-    }
+    //}
 
 
 
@@ -231,7 +231,7 @@ public class SceneCalls : NetworkBehaviour, INetworkRunnerCallbacks
 
     private IEnumerator WaitForAllPlayersAndStartCountdown()
     {
-        while (NetworkedManager.Instance.ReadyPlayerCount < _myrunner.ActivePlayers.Count())
+        while (NetworkedManager.Instance.ReadyPlayerCount == _myrunner.ActivePlayers.Count())
         {
             yield return new WaitForSeconds(0.2f);
             Debug.Log(NetworkedManager.Instance.ReadyPlayerCount + " < " + _myrunner.ActivePlayers.Count());
