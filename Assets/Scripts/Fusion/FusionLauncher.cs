@@ -205,10 +205,12 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
         // Optionally close the room
         runnerInstance.SessionInfo.IsOpen = false;
         runnerInstance.SessionInfo.IsVisible = false;
+        
 
         int raceSceneIndex = mapSelect;
         runnerInstance.LoadScene(SceneRef.FromIndex(raceSceneIndex), new LoadSceneParameters(LoadSceneMode.Single));
 
+        playerDataManager.MoveToScene();
         startButton.interactable = false;
     }
 
@@ -244,19 +246,19 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
     {
         Debug.Log($"Player joined: {player}");
 
-      
-       authLoading.gameObject.SetActive(false);
+
+        authLoading.gameObject.SetActive(false);
         multiplayerPanel.gameObject.SetActive(true);
 
         GameObject entryGO = Instantiate(playerEntryPrefab, playerListContainer);
-     
+
         PlayerEntry entry = entryGO.GetComponent<PlayerEntry>();
         playerEntries[player] = entry;
 
         // Set temporary name
 
         entry.SetReady(true);
-       entry.SetName($"Player: {player.PlayerId }");
+        entry.SetName($"Player: {player.PlayerId}");
 
         // Send your username if this is you (local player)
         if (player == runner.LocalPlayer)
@@ -342,8 +344,8 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
     private void UpdateStartButtonState()
     {
         // Only the server/host can start the game and only when all players are present
-
-        bool allJoined = (runnerInstance.IsServer && playerEntries.Count == maxPlayers);
+        bool allJoined = true;
+        //bool allJoined = (runnerInstance.IsServer && playerEntries.Count == maxPlayers);
        // bool allJoined = (runnerInstance.IsSharedModeMasterClient && playerEntries.Count == maxPlayers);
 
         startButton.interactable = allJoined;

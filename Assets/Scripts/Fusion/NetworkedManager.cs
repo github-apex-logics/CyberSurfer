@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.PlayerLoop;
 
 public class NetworkedManager : NetworkBehaviour
 {
@@ -41,14 +42,14 @@ public class NetworkedManager : NetworkBehaviour
     // public TextMeshProUGUI leaderboardText;
     private List<CyberNetworkController> players = new();
 
-
+    public GameStandings gameStandings;
 
 
     public override void Spawned()
     {
         Instance = this;
         _myrunner = FindAnyObjectByType<NetworkRunner>();
-        playerDataManager = FindAnyObjectByType<PlayerDataManager>();
+       
 
 
         if (Object.HasStateAuthority)
@@ -62,6 +63,8 @@ public class NetworkedManager : NetworkBehaviour
 
         //Enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
+
+
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     void RPC_BoardList()
@@ -80,8 +83,10 @@ public class NetworkedManager : NetworkBehaviour
         for (int i = 0; i < players.Count; i++)
         {
             string name = playerDataManager.GetPlayerName(players[i].Object.InputAuthority);
-          //  string name = playerDataSo.playerNames[players[i].Object.InputAuthority.PlayerId];
+
             leaderboardText.text += $"{i + 1}:  {name}\n";
+
+            gameStandings.playerName[i] = name;
         }
     }
 
@@ -95,6 +100,8 @@ public class NetworkedManager : NetworkBehaviour
         {
             ElapsedTime += Runner.DeltaTime;
         }
+        if (!playerDataManager)
+            playerDataManager = FindAnyObjectByType<PlayerDataManager>();
     }
 
     public float GetTime()

@@ -51297,7 +51297,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Login to PlayFab to save your progress.\nLogging in ensures your stats
-    re safely stored \u2014 even if you change devices.\nYou\u2019ll also appear
+    are safely stored \u2014 even if you change devices.\nYou\u2019ll also appear
     on the leaderboard!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0369495df2ed5b4e842300f840076e6, type: 2}

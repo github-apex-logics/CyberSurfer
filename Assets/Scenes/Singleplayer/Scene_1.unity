@@ -41769,6 +41769,7 @@ GameObject:
   - component: {fileID: 959445805}
   - component: {fileID: 959445804}
   - component: {fileID: 959445803}
+  - component: {fileID: 959445806}
   m_Layer: 5
   m_Name: menuBtn
   m_TagString: Untagged
@@ -41840,10 +41841,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 463789085}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 1
+      - m_Target: {fileID: 959445806}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -41902,6 +41903,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959445801}
   m_CullTransparentMesh: 1
+--- !u!114 &959445806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959445801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bc79013c2192740b2d38d58a5202ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961626542
 GameObject:
   m_ObjectHideFlags: 0
@@ -46915,7 +46928,7 @@ MonoBehaviour:
   _spreadLoop: 1
   _startDelay: 0
   _radius: 700
-  _width: 2400
+  _width: 2316
   _height: 1080
   _angle: 45
   _length: 100
