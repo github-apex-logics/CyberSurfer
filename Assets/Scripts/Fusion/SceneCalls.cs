@@ -231,18 +231,23 @@ public class SceneCalls : NetworkBehaviour, INetworkRunnerCallbacks
 
     private IEnumerator WaitForAllPlayersAndStartCountdown()
     {
-        while (NetworkedManager.Instance.ReadyPlayerCount == _myrunner.ActivePlayers.Count())
+
+        int requiredPlayers = NetworkedManager.Instance.ReadyPlayerCount;
+        SpawnAllPlayers();
+        while (_myrunner.ActivePlayers.Count() < requiredPlayers)
         {
             yield return new WaitForSeconds(0.2f);
             Debug.Log(NetworkedManager.Instance.ReadyPlayerCount + " < " + _myrunner.ActivePlayers.Count());
         }
 
-        Debug.Log("All players ready. Spawning players...");
-        SpawnAllPlayers();
+
+       
+       
 
         Debug.Log("Starting countdown...");
         yield return new WaitForSeconds(2f);
         NetworkObject timer = _myrunner.Spawn(countdownTimerPrefab);
+        NetworkedManager.Instance.ResetReadyPlayers();
     }
     private void SpawnAllPlayers()
     {

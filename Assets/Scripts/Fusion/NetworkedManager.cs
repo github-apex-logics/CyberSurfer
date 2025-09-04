@@ -49,8 +49,13 @@ public class NetworkedManager : NetworkBehaviour
     {
         Instance = this;
         _myrunner = FindAnyObjectByType<NetworkRunner>();
-       
+        playerDataManager = FindAnyObjectByType<PlayerDataManager>();
+        for (int i = 0; i < 4; i++)
+        {
 
+            gameStandings.userName[i].text = string.Empty;
+
+        }
 
         if (Object.HasStateAuthority)
         {

@@ -67,9 +67,11 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
     public async void StartGame(AuthenticationValues auth)
     {
 
-        
-        runnerInstance = Instantiate(runners);
+
+        runnerInstance =  Instantiate(runners);
+       // runnerInstance = runners;
         runnerInstance.ProvideInput = true;
+        runnerInstance.gameObject.SetActive(true);
 
         var sceneRef = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex);
         NetworkSceneInfo info = new NetworkSceneInfo();
@@ -344,8 +346,8 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
     private void UpdateStartButtonState()
     {
         // Only the server/host can start the game and only when all players are present
-        bool allJoined = true;
-        //bool allJoined = (runnerInstance.IsServer && playerEntries.Count == maxPlayers);
+        //bool allJoined = true;
+        bool allJoined = (runnerInstance.IsServer && playerEntries.Count == maxPlayers);
        // bool allJoined = (runnerInstance.IsSharedModeMasterClient && playerEntries.Count == maxPlayers);
 
         startButton.interactable = allJoined;
@@ -390,7 +392,10 @@ public class FusionLauncher : NetworkBehaviour, INetworkRunnerCallbacks
     }
     public void OnSceneLoadStart(NetworkRunner runner) { }
     public void OnSessionListUpdated(NetworkRunner runner, List<SessionInfo> sessionList) { }
-    public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason) { }
+    public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason) 
+    {
+        Debug.LogError("Shutdown Reason: " + shutdownReason);
+    }
     public void OnUserSimulationMessage(NetworkRunner runner, SimulationMessagePtr message) { }
 
 

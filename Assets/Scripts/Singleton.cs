@@ -8,10 +8,10 @@ public class Singleton : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (Instance != null)
+        if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(Instance);
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {

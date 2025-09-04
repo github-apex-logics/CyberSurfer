@@ -56777,8 +56777,16 @@ MonoBehaviour:
   - {fileID: 1604008747}
   - {fileID: 1077345123}
   - {fileID: 1254413651}
-  playerName: []
-  playerScore: []
+  playerName:
+  - 
+  - 
+  - 
+  - 
+  playerScore:
+  - 
+  - 
+  - 
+  - 
 --- !u!1 &1209512720
 GameObject:
   m_ObjectHideFlags: 0

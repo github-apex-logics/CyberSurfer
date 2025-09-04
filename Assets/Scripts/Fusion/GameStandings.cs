@@ -6,12 +6,12 @@ public class GameStandings : MonoBehaviour
     public TMP_Text title;
     public TMP_Text[] userName, userScore;
 
-    public string[] playerName, playerScore;
+    public string[] playerName = new string[4], playerScore = new string[4];
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+      
     }
 
 
@@ -27,6 +27,7 @@ public class GameStandings : MonoBehaviour
             if (userName[i].text == string.Empty)
             {
                 userName[i].gameObject.transform.parent.gameObject.SetActive(false);
+                userName[i].text = playerName[i];
 
             }
         }
