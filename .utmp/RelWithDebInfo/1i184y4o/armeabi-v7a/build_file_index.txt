@@ -1,2 +1,2 @@
-D:\Projects\Cyber_Surfer_URP_6\CyberSurfer\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
-D:\Projects\Cyber_Surfer_URP_6\CyberSurfer\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
+D:\Projects\Cyber_Surfer_URP_6\CyberSurfer\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\Projects\Cyber_Surfer_URP_6\CyberSurfer\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

@@ -14899,7 +14899,7 @@ MonoBehaviour:
   completePanel: {fileID: 0}
   networkManager: {fileID: 0}
   sceneCallbacks: {fileID: 0}
-  moveSpeed: 75
+  moveSpeed: 100
   turnSpeed: 300
   jumpForce: 33
   gravityMultiplier: 23
@@ -14930,6 +14930,7 @@ MonoBehaviour:
     _value: 0
   _isGrounded: 0
   _onRamp: 0
+  _isDead: 0
   _onRampEdge: 0
   _ProgressToFinish: 0
   finishLine: {fileID: 0}
@@ -14938,9 +14939,11 @@ MonoBehaviour:
   touchZoneUI: {fileID: 0}
   rotationInput: 0
   accumulatedRotationDelta: 0
+  targetPitch: 0
   initialRotation: {x: 0, y: 0, z: 0, w: 0}
   rotationSmoothness: 10
   initializedRotation: 0
+  _latestRespawnPos: {x: 0, y: 0, z: 0}
 --- !u!114 &6178466814400685778
 MonoBehaviour:
   m_ObjectHideFlags: 0

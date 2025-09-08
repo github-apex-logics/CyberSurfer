@@ -74,26 +74,36 @@ public class NetworkedManager : NetworkBehaviour
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     void RPC_BoardList()
     {
-        // Find players only once
-        if (players.Count < 4)
-        {
-            players.AddRange(FindObjectsByType<CyberNetworkController>(FindObjectsSortMode.None));
-        }
+        // Refresh player list dynamically (always accurate)
+        players = new List<CyberNetworkController>(
+            FindObjectsByType<CyberNetworkController>(FindObjectsSortMode.None)
+        );
 
-        // Sort players by ProgressToFinish (lower = closer)
+        // Sort players by ProgressToFinish (smaller value = closer to finish)
         players.Sort((a, b) => a.ProgressToFinish.CompareTo(b.ProgressToFinish));
 
-        // Build leaderboard string
+        // Clear leaderboard text
         leaderboardText.text = "";
+
         for (int i = 0; i < players.Count; i++)
         {
-            string name = playerDataManager.GetPlayerName(players[i].Object.InputAuthority);
+            PlayerRef playerRef = players[i].Object.InputAuthority;
 
-            leaderboardText.text += $"{i + 1}:  {name}\n";
+            // Use PlayerDataManager (safe fallback to "Player X")
+            string name = playerDataManager
+                ? playerDataManager.GetPlayerName(playerRef)
+                : $"Player {playerRef.PlayerId}";
 
-            gameStandings.playerName[i] = name;
+            leaderboardText.text += $"{i + 1}: {name}\n";
+
+            // Update standings list safely (avoid index out of range)
+            if (i < gameStandings.playerName.Length)
+            {
+                gameStandings.playerName[i] = name;
+            }
         }
     }
+
 
 
 

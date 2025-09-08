@@ -1,7 +1,7 @@
 {
   "buildFiles": [
-    "D:\\Projects\\Cyber_Surfer_URP_6\\CyberSurfer\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
-    "D:\\Projects\\Cyber_Surfer_URP_6\\CyberSurfer\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
+    "D:\\Projects\\Cyber_Surfer_URP_6\\CyberSurfer\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\Projects\\Cyber_Surfer_URP_6\\CyberSurfer\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
     [
@@ -21,7 +21,7 @@
     "game::@d02bb112ea9f9c2ed29f": {
       "artifactName": "game",
       "abi": "armeabi-v7a",
-      "output": "D:\\Projects\\Cyber_Surfer_URP_6\\CyberSurfer\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\1i184y4o\\obj\\armeabi-v7a\\libgame.so",
+      "output": "D:\\Projects\\Cyber_Surfer_URP_6\\CyberSurfer\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\1i184y4o\\obj\\armeabi-v7a\\libgame.so",
       "runtimeFiles": []
     }
   }

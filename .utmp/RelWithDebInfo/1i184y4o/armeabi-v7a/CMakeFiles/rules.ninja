@@ -42,7 +42,7 @@ rule CXX_SHARED_LIBRARY_LINKER__game_RelWithDebInfo
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\Unity\Hub\Editor\6000.0.53f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\cmake\3.22.1\bin\cmake.exe" --regenerate-during-build -SD:\Projects\Cyber_Surfer_URP_6\CyberSurfer\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp -BD:\Projects\Cyber_Surfer_URP_6\CyberSurfer\.utmp\RelWithDebInfo\1i184y4o\armeabi-v7a
+  command = "C:\Program Files\Unity\Hub\Editor\6000.0.53f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\cmake\3.22.1\bin\cmake.exe" --regenerate-during-build -SD:\Projects\Cyber_Surfer_URP_6\CyberSurfer\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\cpp -BD:\Projects\Cyber_Surfer_URP_6\CyberSurfer\.utmp\RelWithDebInfo\1i184y4o\armeabi-v7a
   description = Re-running CMake...
   generator = 1
 

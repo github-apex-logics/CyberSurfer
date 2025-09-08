@@ -49,8 +49,8 @@ public class Slash : NetworkBehaviour
                 // Example: apply damage logic
                 Debug.Log("Slash hit player: " + player.Object.Id);
               //  player.ResetPos(); // if you have such method
-                if (player.HasInputAuthority)
-                    player.RPC_RequestReset();
+               // if (player.HasInputAuthority)
+                    player.RPC_RequestReset(Object.InputAuthority);
                 Runner.Despawn(Object);
             }
 

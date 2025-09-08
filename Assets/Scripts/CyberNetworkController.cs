@@ -4,13 +4,14 @@ using Fusion;
 using TMPro;
 using System.Collections;
 using System;
+using Fusion.Addons.Physics;
 
 public class CyberNetworkController : NetworkBehaviour
 {
     [Header("References")]
     public Rigidbody rb;
     public GameObject cameraObj, characterObj;
-   
+
     public Image healthBar;
     public GameObject completePanel;
     public NetworkedManager networkManager;
@@ -41,6 +42,8 @@ public class CyberNetworkController : NetworkBehaviour
     [Networked] public NetworkBool slashAnim { get; set; }
     [Networked] public bool isGrounded { get; set; }
     [Networked] public bool onRamp { get; set; }
+    [Networked] public bool isDead { get; set; }
+
     [Networked] public bool onRampEdge { get; set; }
 
     [Networked] public float ProgressToFinish { get; set; }
@@ -52,7 +55,7 @@ public class CyberNetworkController : NetworkBehaviour
     public float horizontalInput;
     private float verticalInput;
     public Transform resetTarget;
-   // public bool isGrounded, onRamp, onRampEdge;
+    // public bool isGrounded, onRamp, onRampEdge;
     private RaycastHit rampHit;
 
 
@@ -71,7 +74,7 @@ public class CyberNetworkController : NetworkBehaviour
     public bool initializedRotation;
 
 
- 
+
     public override void Spawned()
     {
         rb = GetComponent<Rigidbody>();
@@ -80,10 +83,12 @@ public class CyberNetworkController : NetworkBehaviour
         networkManager = FindAnyObjectByType<NetworkedManager>();
         sceneCallbacks = FindAnyObjectByType<SceneCalls>();
 
+        resetTarget = FindAnyObjectByType<DummyTarget>().transform;
+
         if (HasInputAuthority)
         {
             cameraObj.SetActive(true);
-     
+
             touchZoneUI = ui.touchArea;
             ui.powerUpBtn.onClick.AddListener(ActivatePowerUp);
             accumulatedRotationDelta = transform.eulerAngles.y;
@@ -134,13 +139,15 @@ public class CyberNetworkController : NetworkBehaviour
             verticalInput = input.vertical;
 
 
+            //if (!isDead)
+            {
+                Quaternion targetRot = Quaternion.Euler(Mathf.Clamp(input.rotationPitchDelta, -30, 30), input.rotationDelta, 0f);
+                rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRot, Time.fixedDeltaTime * rotationSmoothness));
 
-            Quaternion targetRot = Quaternion.Euler(Mathf.Clamp(input.rotationPitchDelta, -30, 30), input.rotationDelta, 0f);
-            rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRot, Time.fixedDeltaTime * rotationSmoothness));
-
-            HandleMovement();
-            HandleRotation();
-            ApplyGravity();
+                HandleMovement();
+                HandleRotation();
+                ApplyGravity();
+            }
         }
         TrackProgress();
 
@@ -290,7 +297,7 @@ public class CyberNetworkController : NetworkBehaviour
             SpawnSlash_RPC(spawnPoint.forward);
             slashAnim = true;
             Runner.StartCoroutine(SlashDelay());
-            Debug.Log(" i m called for slash " );
+            Debug.Log(" i m called for slash ");
         }
     }
 
@@ -317,14 +324,14 @@ public class CyberNetworkController : NetworkBehaviour
         GameObject slash = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
         slashAnim = true;
         slashEffect.Play();
-     //   Runner.StartCoroutine(SlashDelay(slash));
+        //   Runner.StartCoroutine(SlashDelay(slash));
     }
 
     private IEnumerator SlashDelay()
     {
         yield return new WaitForSeconds(0.025f);
         slashAnim = false;
-       
+
     }
 
     private IEnumerator Boost()
@@ -358,63 +365,72 @@ public class CyberNetworkController : NetworkBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-             if (SoundManager.instance)
-                 SoundManager.instance.PlayClip(ClipName.Jump);
+            if (SoundManager.instance)
+                SoundManager.instance.PlayClip(ClipName.Jump);
             Runner.StartCoroutine(Jump());
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
-           // StartCoroutine(delay());
+            // StartCoroutine(delay());
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+   [Networked] public Vector3 latestRespawnPos { get; set; }
+    [Networked] private Quaternion latestRespawnRot { get; set; }
+
+    private void OnTriggerStay(Collider other)
     {
+        if (Object == null || !Object.HasStateAuthority) return; // Only host runs collision
+
+        // --- Respawn Zones ---
         if (other.TryGetComponent<RespawnCollider>(out RespawnCollider rc))
         {
-            resetTarget = rc.spawnPoint;
-            Debug.Log("I m called :  ");
+            Debug.Log("rc name: " + rc.name);
+            Vector3 pos = rc.spawnPoint.position;
+            Vector3 rot = rc.spawnPoint.eulerAngles;
+            RPC_SetTarget(Object.InputAuthority, pos, rot);
         }
-        if (other.gameObject.CompareTag("DeadZone"))
+
+        // --- DeadZone ---
+        if (other.CompareTag("DeadZone"))
         {
-            //ResetPos();
-            if (HasInputAuthority)
-                RPC_RequestReset();
+            RPC_RequestReset(Object.InputAuthority); // No need to pass InputAuthority
         }
-        if (other.gameObject.CompareTag("Coin"))
+
+        // --- Coins ---
+        if (other.CompareTag("Coin"))
         {
             SoundManager.instance.PlayClip(ClipName.Coin);
-            // slashAnim = true;
-            //AddCoin();
-            Destroy(other.gameObject);
+
+            // Despawn across the network
+            if (other.TryGetComponent<NetworkObject>(out var coinObj))
+            {
+                Runner.Despawn(coinObj);
+            }
+            else
+            {
+                Destroy(other.gameObject); // fallback if not networked
+            }
         }
-        if (other.gameObject.CompareTag("Enemy_Shot"))
+
+        // --- Enemy Shot ---
+        if (other.CompareTag("Enemy_Shot"))
         {
             TakeDamage(5);
         }
 
-        if (other.gameObject.CompareTag("Ground"))
+        // --- Ground ---
+        if (other.CompareTag("Ground"))
         {
             isGrounded = true;
+
             if (SoundManager.instance)
                 SoundManager.instance.PlayClip(ClipName.Jump);
 
             Runner.StartCoroutine(Jump());
         }
-
-
-
-        //if (other.gameObject.TryGetComponent<PowerUp>(out PowerUp pu))
-        //{
-
-        //    SoundManager.instance.PlayClip(ClipName.PowerUp);
-
-        //    UIControllerBtns.UpdateIcon(pu.powerUp);
-        //    UIControllerBtns.PowerButtonInteractbale(true);
-        //    pu.ChoosePowerUps();
-        //}
-
     }
+
 
     public void TrackProgress()
     {
@@ -442,31 +458,65 @@ public class CyberNetworkController : NetworkBehaviour
         transform.rotation = resetTarget.localRotation;
 
 
-        
-     
-
         SoundManager.instance.PlayClip(ClipName.Spawn);
     }
 
 
 
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    public void RPC_RequestReset()
+  //  [Rpc(RpcSources.StateAuthority, RpcTargets.InputAuthority)]
+    private void RPC_SetTarget(PlayerRef p, Vector3 pos, Vector3 rot)
     {
+        if (Object.InputAuthority == p)
+        {
+            latestRespawnPos = pos;
+            latestRespawnRot = Quaternion.Euler(rot);
+
+            Debug.Log($"Respawn target set for {p}: {latestRespawnPos}  :  {pos}");
+        }
+    }
+
+
+   // [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void RPC_RequestReset(PlayerRef p)
+    {
+        isDead = true;
+
+        Debug.Log("state..." + p);
+
         DoResetPos();
+
     }
 
 
 
     private void DoResetPos()
     {
-        accumulatedRotationDelta = resetTarget.eulerAngles.y;
-        transform.position = resetTarget.position;
-        transform.rotation = resetTarget.rotation;
+        Debug.Log("Running Respawn...");
+
+        accumulatedRotationDelta = latestRespawnRot.eulerAngles.y;
+        transform.position = latestRespawnPos;
+        transform.rotation = latestRespawnRot;
 
         SoundManager.instance.PlayClip(ClipName.Spawn);
     }
 
+
+    //private void DoResetPos()
+    //{
+
+    //    Debug.Log("Resetting on Host");
+    //     Reset rigidbody physics state
+    //    var rb = GetComponent<NetworkRigidbody3D>();
+    //    rb.Teleport(latestRespawnPos, latestRespawnRot);
+
+    //     Optional: clear velocity/forces
+    //    rb.Rigidbody.linearVelocity = Vector3.zero;
+    //    rb.Rigidbody.angularVelocity = Vector3.zero;
+    //    accumulatedRotationDelta = latestRespawnRot.eulerAngles.y;
+
+    //    SoundManager.instance.PlayClip(ClipName.Spawn);
+
+    //}
 
 
 }

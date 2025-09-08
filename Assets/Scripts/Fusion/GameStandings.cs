@@ -24,11 +24,14 @@ public class GameStandings : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            if (userName[i].text == string.Empty)
+            if (playerName[i] != string.Empty)
+            {
+                userName[i].gameObject.transform.parent.gameObject.SetActive(true);
+                userName[i].text = playerName[i];
+            }
+            else
             {
                 userName[i].gameObject.transform.parent.gameObject.SetActive(false);
-                userName[i].text = playerName[i];
-
             }
         }
     }
