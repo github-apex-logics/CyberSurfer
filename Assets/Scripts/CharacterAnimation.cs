@@ -124,7 +124,7 @@ public class CharacterAnimation : MonoBehaviour, IInjectable
        // controller.Jump();
     }
 
-    public void Steps(int num)
+    public void Steps(int num) 
     {
         if (levelManager.startGame)
         {

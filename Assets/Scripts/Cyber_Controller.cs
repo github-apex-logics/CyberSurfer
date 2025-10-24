@@ -430,6 +430,10 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
             SoundManager.instance.PlayClip(ClipName.LevelComplete);
             StartCoroutine(delay());
         }
+
+
+       
+
     }
     public bool slashAnim;
 
@@ -585,7 +589,13 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
         }
 
 
-       
+        if (other.gameObject.CompareTag("MainCamera"))
+        {
+            Debug.LogError("-collission-");
+           // Destroy(other.gameObject);
+        }
+
+
 
 
         if (other.gameObject.TryGetComponent<PowerUp>(out PowerUp pu))
