@@ -60,7 +60,7 @@ public class LootPanelUI : MonoBehaviour
         item.GetChild(5).gameObject.SetActive(!hasLootbox);
         item.GetChild(4).gameObject.SetActive(hasLootbox);
         item.GetChild(6).gameObject.SetActive(!hasLootbox);
-        item.GetComponent<Button>().enabled = hasLootbox;
+      //  item.GetComponent<Button>().enabled = hasLootbox;
 
         if (hasLootbox)
 

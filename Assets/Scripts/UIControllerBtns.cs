@@ -8,21 +8,27 @@ public class UIControllerBtns : MonoBehaviour
 
     public Button powerUpBtn;
     public Image powerUpIconA, powerUpIconB;
-    public Sprite slash, homing, boost,shield;
+    public Sprite slash, homing, boost, shield;
     public Powers powerUp;
-   public  Powers slotA = Powers.None, slotB = Powers.None;
+    public Powers slotA = Powers.None, slotB = Powers.None;
     bool slot_A, slot_B;
 
     public RectTransform touchArea;
     public GameObject shieldObj;
     public GameObject boostEffect;
     public GameObject hitEffect;
+    public bool isMultislot;
 
     private void Start()
     {
         // PowerButtonInteractbale(false);
-        UpdateIcon(slotA, powerUpIconA);
-        UpdateIcon(slotB, powerUpIconB);
+        if (isMultislot)
+        {
+            UpdateIcon(slotA, powerUpIconA);
+            UpdateIcon(slotB, powerUpIconB);
+        }
+        
+
     }
 
 
@@ -99,7 +105,11 @@ public class UIControllerBtns : MonoBehaviour
 
     public void UpdateIcon(Powers pu)
     {
+
+       /// powerUpBtn.gameObject.SetActive(true);
+        PowerButtonInteractbale(true);
         powerUp = pu;
+        Debug.Log("Updating power-up icon to: " + powerUp);
         switch (powerUp)
         {
             case Powers.Slash:
@@ -126,8 +136,8 @@ public class UIControllerBtns : MonoBehaviour
 
     public void PowerButtonInteractbale(bool b)
     {
-      //  powerUpBtn.interactable = b;
-       // powerUpBtn.transform.GetChild(1).gameObject.SetActive(!b);
+        powerUpBtn.interactable = b;
+        powerUpBtn.transform.GetChild(1).gameObject.SetActive(!b);
     }
 
 

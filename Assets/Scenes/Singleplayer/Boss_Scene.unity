@@ -194,6 +194,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -215,6 +217,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -278,6 +281,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -376,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1324,6 +1335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1387,6 +1402,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1408,6 +1425,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1472,6 +1490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1535,6 +1557,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -1556,6 +1580,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1621,6 +1646,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1642,6 +1669,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1706,6 +1734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1767,6 +1799,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1853,6 +1889,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1874,6 +1912,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2404,6 +2443,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2425,6 +2466,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2488,6 +2530,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2605,6 +2651,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3131,6 +3181,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3152,6 +3204,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3268,6 +3321,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -3289,6 +3344,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3390,6 +3446,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3411,6 +3469,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3512,6 +3571,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3533,6 +3594,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3678,6 +3740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3739,6 +3805,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4420,6 +4490,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4441,6 +4513,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -4506,6 +4579,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4527,6 +4602,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -4671,6 +4747,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4865,6 +4945,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4886,6 +4968,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -5112,6 +5195,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5133,6 +5218,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -5239,6 +5325,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5260,6 +5348,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -5859,6 +5948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5926,6 +6019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5987,6 +6084,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6087,6 +6188,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6108,6 +6211,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -6259,6 +6363,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6280,6 +6386,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -6381,6 +6488,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6402,6 +6511,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -6466,6 +6576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6527,6 +6641,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6590,6 +6708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6651,6 +6773,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7280,6 +7406,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7301,6 +7429,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -7637,6 +7766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7698,6 +7831,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7924,6 +8061,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -7945,6 +8084,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -8083,6 +8223,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8287,6 +8431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8350,6 +8498,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8371,6 +8521,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -8602,6 +8753,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8920,6 +9075,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8941,6 +9098,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -9006,6 +9164,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9027,6 +9187,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -9129,6 +9290,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9150,6 +9313,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -9301,6 +9465,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -9322,6 +9488,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -9385,6 +9552,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9565,6 +9736,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9586,6 +9759,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -9826,6 +10000,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9847,6 +10023,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -9912,6 +10089,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9933,6 +10112,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -10233,6 +10413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10401,6 +10585,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10929,8 +11117,8 @@ MonoBehaviour:
   healthBar: {fileID: 974221263}
   animator: {fileID: 425343882}
   detectionRadius: 1100
-  attackCooldown: 7
-  projectileSpeed: 900
+  attackCooldown: 5
+  projectileSpeed: 1100
   attackTriggers:
   - Fire
   - Laser
@@ -10949,10 +11137,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425343881}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -11148,6 +11336,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11169,6 +11359,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -11326,6 +11517,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11347,6 +11540,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -11741,6 +11935,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12632,6 +12830,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12653,6 +12853,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -13453,6 +13654,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13474,6 +13677,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -13753,6 +13957,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13774,6 +13980,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -14254,6 +14461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14491,6 +14702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14552,6 +14767,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14678,7 +14897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593727020
@@ -14770,6 +14989,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14970,6 +15193,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14991,6 +15216,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -15108,6 +15334,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15869,6 +16099,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15890,6 +16122,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -16028,6 +16261,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16562,6 +16799,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -16583,6 +16822,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -16648,6 +16888,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16669,6 +16911,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -16875,6 +17118,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16896,6 +17141,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -16984,6 +17230,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17005,6 +17253,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -17081,6 +17330,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17570,6 +17823,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17591,6 +17846,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -17656,6 +17912,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17677,6 +17935,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -17816,6 +18075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17882,6 +18145,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18109,6 +18376,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18130,6 +18399,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -19045,6 +19315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19106,6 +19380,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19469,6 +19747,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19490,6 +19770,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -19556,6 +19837,8 @@ ParticleSystemRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19578,6 +19861,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -24389,6 +24673,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -24410,6 +24696,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -24731,6 +25018,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -24752,6 +25041,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -25351,6 +25641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25669,6 +25963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25732,6 +26030,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -25753,6 +26053,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -25909,6 +26210,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -25930,6 +26233,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -25996,6 +26300,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -26017,6 +26323,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -26952,6 +27259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27170,6 +27481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27233,6 +27548,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -27254,6 +27571,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -27688,6 +28006,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -27709,6 +28029,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -27773,6 +28094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27834,6 +28159,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27897,6 +28226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27958,6 +28291,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28095,6 +28432,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28440,6 +28781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28503,6 +28848,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -28524,6 +28871,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -30788,6 +31136,8 @@ GameObject:
   - component: {fileID: 959445805}
   - component: {fileID: 959445804}
   - component: {fileID: 959445803}
+  - component: {fileID: 959445807}
+  - component: {fileID: 959445806}
   m_Layer: 5
   m_Name: menuBtn
   m_TagString: Untagged
@@ -30858,31 +31208,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 959445804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 463789085}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2014984802}
-        m_TargetAssemblyTypeName: PanelClose, Assembly-CSharp
-        m_MethodName: ClosePanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &959445804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30921,6 +31247,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959445801}
   m_CullTransparentMesh: 1
+--- !u!114 &959445806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959445801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bc79013c2192740b2d38d58a5202ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChange
+--- !u!114 &959445807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959445801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9948384ae995e63459136ec1c3bc0120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelButtonAction
+  panel: {fileID: 0}
+  onAfterClose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 959445806}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &962523430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1960382934384514, guid: f06da6411a4b5cf49b36b1f079d5d555, type: 3}
@@ -30997,6 +31363,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -31018,6 +31386,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -31119,6 +31488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31182,6 +31555,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -31203,6 +31578,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -32040,6 +32416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32101,6 +32481,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32276,17 +32660,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!108 &992955524
 Light:
   m_ObjectHideFlags: 0
@@ -32794,6 +33184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33016,6 +33410,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33241,6 +33639,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -33262,6 +33662,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -33325,6 +33726,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33562,6 +33967,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34039,6 +34448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34195,6 +34608,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34216,6 +34631,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -34371,6 +34787,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34392,6 +34810,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -34456,6 +34875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34519,6 +34942,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34540,6 +34965,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -34810,6 +35236,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34831,6 +35259,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -34969,6 +35398,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35370,6 +35803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35470,6 +35907,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -35491,6 +35930,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -35711,6 +36151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35790,7 +36234,7 @@ MonoBehaviour:
   _spreadLoop: 1
   _startDelay: 0
   _radius: 700
-  _width: 2400
+  _width: 2316
   _height: 1080
   _angle: 45
   _length: 100
@@ -37292,6 +37736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37377,6 +37825,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -37398,6 +37848,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -37715,6 +38166,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -37736,6 +38189,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -37961,6 +38415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38109,6 +38567,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38481,6 +38943,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39099,7 +39565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockImage: {fileID: 1078129324}
-  coolDownTime: 0.1
+  coolDownTime: 0
   powerButton: {fileID: 1209512723}
 --- !u!1 &1217121446
 GameObject:
@@ -39191,6 +39657,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -39212,6 +39680,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -39277,6 +39746,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -39298,6 +39769,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -39448,6 +39920,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -39469,6 +39943,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -39684,6 +40159,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39949,6 +40428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40073,6 +40556,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -40094,6 +40579,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -40157,6 +40643,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40483,6 +40973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40637,6 +41131,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -40658,6 +41154,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -40802,6 +41299,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41093,6 +41594,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -41114,6 +41617,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -41405,6 +41909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41468,6 +41976,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -41489,6 +41999,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -41555,6 +42066,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -41576,6 +42089,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -41645,6 +42159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41708,6 +42226,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -41729,6 +42249,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -41793,6 +42314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41856,6 +42381,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -41877,6 +42404,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -42203,6 +42731,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42773,6 +43305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42912,6 +43448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42973,6 +43513,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43192,6 +43736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43342,6 +43890,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -43363,6 +43913,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -43428,6 +43979,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -43449,6 +44002,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -43514,6 +44068,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -43535,6 +44091,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -43600,6 +44157,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -43621,6 +44180,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -43761,6 +44321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43823,6 +44387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43884,6 +44452,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44161,6 +44733,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -44182,6 +44756,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -44278,6 +44853,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -44299,6 +44876,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -44364,6 +44942,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -44385,6 +44965,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -44657,6 +45238,7 @@ RectTransform:
   - {fileID: 1209512721}
   - {fileID: 1440396362}
   - {fileID: 1718049539}
+  - {fileID: 593727019}
   - {fileID: 2125495034}
   - {fileID: 2007522821}
   - {fileID: 1690991510}
@@ -44667,7 +45249,6 @@ RectTransform:
   - {fileID: 849829529}
   - {fileID: 1327288091}
   - {fileID: 900139030}
-  - {fileID: 593727019}
   - {fileID: 1597587716}
   - {fileID: 1258792959}
   - {fileID: 838543565}
@@ -44704,6 +45285,7 @@ MonoBehaviour:
   shieldObj: {fileID: 2142158801}
   boostEffect: {fileID: 1128999417}
   hitEffect: {fileID: 1690991509}
+  isMultislot: 1
 --- !u!1001 &1488608826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44940,6 +45522,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -44961,6 +45545,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -45797,17 +46382,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1517529651
 GameObject:
   m_ObjectHideFlags: 0
@@ -46470,6 +47061,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -46491,6 +47084,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -46578,6 +47172,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -46599,6 +47195,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -46662,6 +47259,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46748,6 +47349,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -46769,6 +47372,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -46856,6 +47460,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -46877,6 +47483,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -47319,6 +47926,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -47340,6 +47949,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -47403,6 +48013,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47728,6 +48342,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -47749,6 +48365,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -47812,6 +48429,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48135,6 +48756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48230,6 +48855,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -48251,6 +48878,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -48316,6 +48944,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -48337,6 +48967,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -48402,6 +49033,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -48423,6 +49056,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -48568,6 +49202,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -48589,6 +49225,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -48944,6 +49581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49044,6 +49685,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -49065,6 +49708,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -49128,6 +49772,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49228,6 +49876,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -49249,6 +49899,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -49412,6 +50063,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -49433,6 +50086,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -49664,6 +50318,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -49685,6 +50341,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -49753,6 +50410,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49872,6 +50533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49971,6 +50636,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -49992,6 +50659,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -50304,6 +50972,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -50325,6 +50995,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -50388,6 +51059,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50662,6 +51337,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -50683,6 +51360,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -50940,6 +51618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51122,6 +51804,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51316,6 +52002,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -51337,6 +52025,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -51400,6 +52089,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51539,6 +52232,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51704,6 +52401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51765,6 +52466,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52106,6 +52811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52305,6 +53014,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -52326,6 +53037,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -52389,6 +53101,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52638,6 +53354,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -52659,6 +53377,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -52944,6 +53663,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53436,6 +54159,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -53457,6 +54182,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -53589,6 +54315,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -53610,6 +54338,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -53736,6 +54465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53797,6 +54530,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53864,6 +54601,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54148,6 +54889,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54169,6 +54912,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -54234,6 +54978,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54255,6 +55001,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -54406,6 +55153,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54427,6 +55176,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -54492,6 +55242,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54513,6 +55265,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -54659,6 +55412,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54680,6 +55435,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -54820,6 +55576,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54841,6 +55599,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -54987,6 +55746,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -55008,6 +55769,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -55110,6 +55872,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -55131,6 +55895,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -55287,6 +56052,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -55308,6 +56075,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -55670,6 +56438,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56587,6 +57359,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -56608,6 +57382,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -56960,6 +57735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57240,6 +58019,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57261,6 +58042,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -57501,6 +58283,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57522,6 +58306,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -57660,6 +58445,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58022,6 +58811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58343,6 +59136,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58681,6 +59478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58744,6 +59545,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -58765,6 +59568,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -58828,6 +59632,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59090,6 +59898,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59456,6 +60268,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -59477,6 +60291,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -59541,6 +60356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59603,6 +60422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59613,25 +60436,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 233896509463905402, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
   m_PrefabInstance: {fileID: 1991186632}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1995823071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7531915895439702657, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
-  m_PrefabInstance: {fileID: 3635560647862308354}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1995823075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995823071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f73ff51af33a44438e3c0d9fd33b5b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.2
-  magnitude: 1
 --- !u!1001 &1997406892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59683,6 +60487,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59904,6 +60712,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -59925,6 +60735,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -59994,6 +60805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60056,6 +60871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60077,6 +60896,7 @@ GameObject:
   - component: {fileID: 2014984800}
   - component: {fileID: 2014984803}
   - component: {fileID: 2014984802}
+  - component: {fileID: 2014984804}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -60135,6 +60955,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2014984804}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2014984803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -60143,6 +60975,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014984799}
   m_CullTransparentMesh: 1
+--- !u!114 &2014984804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014984799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bc79013c2192740b2d38d58a5202ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChange
 --- !u!4 &2017200765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e29649ae66c4f2b4c925a860271e7ae0, type: 3}
@@ -60202,6 +61046,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -60223,6 +61069,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -60696,6 +61543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp_Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60762,6 +61613,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -60901,6 +61756,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -60922,6 +61779,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -61023,6 +61881,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -61044,6 +61904,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -61114,6 +61975,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -61135,6 +61998,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -61782,6 +62646,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -61803,6 +62669,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -61929,6 +62796,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -61950,6 +62819,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -62175,6 +63045,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62998,6 +63872,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -63019,6 +63895,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -63857,6 +64734,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1009320290267451671, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1066729275609445286, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00002146326
@@ -64515,11 +65396,11 @@ PrefabInstance:
       objectReference: {fileID: 1690991509}
     - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: moveSpeed
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: slashSpeed
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: spawnPoint
@@ -64529,6 +65410,10 @@ PrefabInstance:
       propertyPath: boostEffect
       value: 
       objectReference: {fileID: 1128999417}
+    - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
+      propertyPath: isMultiSlot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: LevelManager
       value: 
@@ -64547,7 +65432,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: slashLifetime
-      value: 2.5
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
+      propertyPath: aimOffsetVertical
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027001749167542062, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
+      propertyPath: aimOffsetHorizontal
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5127036708330738210, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64607,31 +65500,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000015894572
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.499994
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9300331
+      value: 1.93
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99292403
+      value: 0.99292415
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1187519
+      value: 0.118750535
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5311920314194071966, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -64948,6 +65841,14 @@ PrefabInstance:
     - target: {fileID: 7347128065481378457, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.08474052
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529168814986980308, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529168814986980308, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7534661260766893320, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65279,10 +66180,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4848027749407341731, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2017872626}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7531915895439702657, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1995823075}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9c7124f79f3ef42b7c9b29802b65ca, type: 3}
 --- !u!95 &3635560647862308355 stripped
 Animator:
@@ -65345,6 +66243,10 @@ PrefabInstance:
     - target: {fileID: 3804693940495666555, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
       propertyPath: m_Name
       value: PowerUp_Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223322080274268230, guid: 328d07d69b32d0747a068443c804e6b1, type: 3}
+      propertyPath: numberOfPowersToChoose
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

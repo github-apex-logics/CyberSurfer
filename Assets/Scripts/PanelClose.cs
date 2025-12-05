@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,25 +8,48 @@ public class PanelClose : MonoBehaviour
     public float delayTime;
     public PanelAnimation[] panelAnimations;
     public UnityEvent OnClose;
+
+    private Action onClosedCallback; // store specific action from the button
+
     private void Start()
     {
-        panelAnimations = gameObject.GetComponentsInChildren<PanelAnimation>();
+        panelAnimations = GetComponentsInChildren<PanelAnimation>();
     }
 
+    // Default close (uses UnityEvent only)
     public void ClosePanel()
     {
-        StartCoroutine(closeDelay());
-        for (int i = 0; i < panelAnimations.Length; i++)
-        {
-            panelAnimations[i].ClosePanel();    
-        }
+        ClosePanel(null);
     }
 
-    IEnumerator closeDelay()
+    // Overload that accepts a specific action
+    public void ClosePanel(Action onClosed)
+    {
+        onClosedCallback = onClosed;
+        StartCoroutine(CloseDelay());
+
+        foreach (var anim in panelAnimations)
+            anim.ClosePanel();
+    }
+
+    public void ClosePanels(UnityEvent onClosed)
+    {
+       // onClosedCallback = onClosed;
+        StartCoroutine(CloseDelay());
+
+        foreach (var anim in panelAnimations)
+            anim.ClosePanel();
+    }
+
+    private IEnumerator CloseDelay()
     {
         yield return new WaitForSecondsRealtime(delayTime);
-        this.gameObject.SetActive(false);
-        OnClose.Invoke();
-    }
 
+        gameObject.SetActive(false);
+        OnClose?.Invoke();
+
+        // Execute specific callback if assigned
+        onClosedCallback?.Invoke();
+        onClosedCallback = null;
+    }
 }

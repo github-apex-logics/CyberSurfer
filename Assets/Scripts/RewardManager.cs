@@ -1,5 +1,6 @@
 using GoogleMobileAds.Api;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -36,6 +37,7 @@ public class RewardManager : MonoBehaviour
    
     public RewardUI rewardUI;
 
+    
 
     private void Start()
     {
@@ -126,6 +128,10 @@ public class RewardManager : MonoBehaviour
 
         }
     }
+
+
+
+
 
 
     private RewardItem GetRandomReward()

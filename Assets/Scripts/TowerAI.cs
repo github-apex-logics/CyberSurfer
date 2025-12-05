@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 public class TowerAI : MonoBehaviour
 {
     #region === References ===
@@ -51,6 +52,12 @@ public class TowerAI : MonoBehaviour
 
     [Header("Tower 4 Settings")]
     public bool tower4;
+    [Header("Settings")]
+    public float fireRate = 2f;
+    public float detectionRange = 20f;
+    public float muzzleSpeed = 25f;
+    public bool useHighArc = true;
+
     #endregion
 
     #region === Private Variables ===
@@ -58,6 +65,20 @@ public class TowerAI : MonoBehaviour
     private float shootTimer;
     private bool toggleState;
     #endregion
+
+
+
+    private void Start()
+    {
+        Cyber_Controller[] controllers = FindObjectsByType<Cyber_Controller>(FindObjectsSortMode.None);
+        players = new Transform[controllers.Length];
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            players[i] = controllers[i].transform;
+        }
+    }
+
+
 
     #region === Unity Methods ===
     private void Update()
@@ -129,8 +150,8 @@ public class TowerAI : MonoBehaviour
             direction.y = 0f;    // flat rotation
 
         Quaternion targetRotation = Quaternion.LookRotation(direction);
-        turretHead.rotation = Quaternion.Slerp(
-            turretHead.rotation, targetRotation, Time.deltaTime * lookSpeed);
+        if (turretHead)
+            turretHead.rotation = Quaternion.Slerp(turretHead.rotation, targetRotation, Time.deltaTime * lookSpeed);
     }
     #endregion
 
@@ -142,20 +163,26 @@ public class TowerAI : MonoBehaviour
 
         if (tower1)
         {
-            FireProjectile(target);
+            FireProjectile(target,0);
             StartCoroutine(TowerOneEffect());
         }
         else if (tower2)
         {
             // TODO: Add Tower 2 shooting behavior here
         }
+        else if (tower3)
+        {
+            //TODO: Add Tower 3 shooting behavior here
+        }
         else if (tower4)
         {
             // TODO: Add Tower 4 shooting behavior here
+            FireProjectile(target, 0.0f);
+            GunFireSound.Play();
         }
     }
 
-    private void FireProjectile(Transform target)
+    private void FireProjectile(Transform target, float arcValue)
     {
         GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
@@ -163,11 +190,58 @@ public class TowerAI : MonoBehaviour
         if (rb != null)
         {
             Vector3 dir = (target.position - firePoint.position).normalized;
+            dir.y += arcValue;
             rb.linearVelocity = dir * projectileSpeed;
+            //rb.MovePosition()
+
+            //sampleTime += Time.deltaTime * speed;
+            //transform.position = Evaluate(sampleTime);
+
+
         }
 
         Destroy(projectile, 5f); // Cleanup after delay
     }
+
+    Vector3 A, B, C;
+
+    // to calculate the projectile path where A is origin B is target & C is mid Curve Point
+    Vector3 Evaluate(float t)
+    {
+        Vector3 ac = Vector3.Lerp(A, C, t);
+        Vector3 cb = Vector3.Lerp(C, B, t);
+
+        return Vector3.Lerp(ac, cb, t);
+    }
+
+
+
+    void FireCannon(Transform target)
+    {
+        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+        Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        rb.useGravity = true;
+
+        Vector3 launchVelocity;
+        bool success = Ballistics.SolveBallisticVelocity(out launchVelocity, firePoint.position, target.position, muzzleSpeed, Physics.gravity.y, useHighArc);
+
+        if (success)
+        {
+            rb.linearVelocity = launchVelocity;
+            projectile.transform.rotation = Quaternion.LookRotation(rb.linearVelocity);
+        }
+        else
+        {
+            // fallback to straight line shot
+            rb.linearVelocity = (target.position - firePoint.position).normalized * muzzleSpeed;
+        }
+
+        // Optional: destroy projectile after few seconds
+        Destroy(projectile, 5f);
+    }
+
+
+
     #endregion
 
     #region === Tower Effects ===
@@ -197,7 +271,8 @@ public class TowerAI : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             yield return new WaitForSeconds(0.05f);
-            T1_Gun.transform.localRotation = originalRot * Quaternion.Euler(0, 0, 20f);
+            T1_Gun.transform.localRotation = originalRot * Quaternion.Euler(0, 0, 0f);
+          //  T1_Gun.transform.localRotation = Quaternion.Slerp(T1_Gun.transform.localRotation, originalRot * Quaternion.Euler(0, 20, 0f), 0.5f);
         }
 
         // Reset rotation

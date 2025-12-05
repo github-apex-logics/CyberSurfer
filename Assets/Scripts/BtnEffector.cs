@@ -1,4 +1,4 @@
-using System;
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -55,7 +55,8 @@ public class BtnEffector : MonoBehaviour
             {
                 Btns[i].color = pink;
                 Btns[i].GetComponentInChildren<TMP_Text>().color = white;
-                panels[i].SetActive(true);
+                if (panels.Length > 0)
+                    panels[i].SetActive(true);
             }
             else
             {
@@ -63,7 +64,8 @@ public class BtnEffector : MonoBehaviour
 
                 Btns[i].color = white;
                 Btns[i].GetComponentInChildren<TMP_Text>().color = pink;
-                panels[i].SetActive(false);
+                if (panels.Length > 0)
+                    panels[i].SetActive(false);
             }
 
         }
@@ -80,7 +82,8 @@ public class BtnEffector : MonoBehaviour
             {
                 Btns[i].color = pink;
                 Btns[i].GetComponentInChildren<TMP_Text>().color = white;
-                titleTxt.text = Btns[i].GetComponentInChildren<TMP_Text>().text;
+                if (titleTxt)
+                    titleTxt.text = Btns[i].GetComponentInChildren<TMP_Text>().text;
             }
             else
             {

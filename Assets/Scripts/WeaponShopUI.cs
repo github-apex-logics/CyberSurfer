@@ -9,7 +9,7 @@ public class WeaponShopUI : MonoBehaviour
     public WeaponDatabaseSO WeaponDatabaseSO;
     
    public List< Transform> items;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
 
 
     // reading from  a scriptable object and update the UI objects by accessing the child
@@ -71,6 +71,78 @@ public class WeaponShopUI : MonoBehaviour
     }
 
 
+  public void UpdateLockedList()
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            items[i].gameObject.SetActive(true);
+            items[i].GetChild(1).GetComponent<Image>().sprite = WeaponDatabaseSO.weapons[i].icon;
+            items[i].GetChild(3).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].weaponName;
+            items[i].GetChild(4).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].price.ToString();
+            items[i].GetChild(0).GetComponent<UIEffect>().effectMode = EffectMode.Grayscale;
+            items[i].GetChild(2).GetComponent<UIEffect>().effectMode = EffectMode.Grayscale;
+            items[i].GetChild(1).GetComponent<UIShiny>().enabled = false;
+            items[i].GetChild(7).gameObject.SetActive(false);
+            if (WeaponDatabaseSO.weapons[i].state == WeaponState.Locked)
+            {
+                //items[i].GetChild(4).gameObject.SetActive(false);
+                //items[i].GetChild(3).gameObject.SetActive(false);
+                //items[i].GetChild(6).gameObject.SetActive(false);
+                //items[i].GetChild(7).gameObject.SetActive(false);
+                //items[i].GetChild(5).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].weaponName;
+                //items[i].GetChild(0).GetComponent<UIEffect>().effectMode = EffectMode.gra;
+                //items[i].GetChild(2).GetComponent<UIEffect>().effectMode = EffectMode.None;
+            }
+            else
+            {
+                items[i].gameObject.SetActive(false);
+            }
+           
+        }
+    }
+
+
+  public  void UpdateUnlockedList()
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            items[i].gameObject.SetActive(true);
+            items[i].GetChild(1).GetComponent<Image>().sprite = WeaponDatabaseSO.weapons[i].icon;
+            items[i].GetChild(3).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].weaponName;
+            items[i].GetChild(4).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].price.ToString();
+            items[i].GetChild(0).GetComponent<UIEffect>().effectMode = EffectMode.Grayscale;
+            items[i].GetChild(2).GetComponent<UIEffect>().effectMode = EffectMode.Grayscale;
+            items[i].GetChild(1).GetComponent<UIShiny>().enabled = false;
+            items[i].GetChild(7).gameObject.SetActive(false);
+            if (WeaponDatabaseSO.weapons[i].state == WeaponState.Purchased)
+            {
+                items[i].GetChild(4).gameObject.SetActive(false);
+                items[i].GetChild(3).gameObject.SetActive(false);
+                items[i].GetChild(6).gameObject.SetActive(false);
+                items[i].GetChild(7).gameObject.SetActive(false);
+                items[i].GetChild(5).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].weaponName;
+                items[i].GetChild(0).GetComponent<UIEffect>().effectMode = EffectMode.Grayscale;
+                items[i].GetChild(2).GetComponent<UIEffect>().effectMode = EffectMode.Grayscale;
+            }
+            if (WeaponDatabaseSO.weapons[i].state == WeaponState.Selected)
+            {
+                items[i].GetChild(4).gameObject.SetActive(false);
+                items[i].GetChild(3).gameObject.SetActive(false);
+                items[i].GetChild(6).gameObject.SetActive(false);
+                items[i].GetChild(7).gameObject.SetActive(true);
+                items[i].GetChild(5).GetComponent<TMP_Text>().text = WeaponDatabaseSO.weapons[i].weaponName;
+                items[i].GetChild(0).GetComponent<UIEffect>().effectMode = EffectMode.None;
+                items[i].GetChild(2).GetComponent<UIEffect>().effectMode = EffectMode.None;
+                items[i].GetChild(1).GetComponent<UIShiny>().enabled = true;
+            }
+            if (WeaponDatabaseSO.weapons[i].state == WeaponState.Locked)
+            {
+                items[i].gameObject.SetActive(false);
+            }
+        }
+
+    }
+
     void LoadWeapons()
     {
         int ID = 1;
@@ -92,7 +164,8 @@ public class WeaponShopUI : MonoBehaviour
         }
 
 
-        UpdateList();
+        // UpdateList();
+        UpdateUnlockedList();
     }
 
     // Update is called once per frame

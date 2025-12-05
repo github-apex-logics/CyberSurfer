@@ -14,6 +14,7 @@ public class CharacterAnimation : MonoBehaviour, IInjectable
     AudioSource src;
     public AudioClip footStep1, footStep2;
     [Inject] private LevelManager levelManager;
+    public GameObject camera_;
 
     private void Awake()
     {
@@ -27,6 +28,8 @@ public class CharacterAnimation : MonoBehaviour, IInjectable
         // controller = GetComponent<Cyber_Controller>();    
         StartCoroutine(delay());
         StartCoroutine(InjectionDelay());
+
+        controller.camera_ = camera_;
     }
 
 

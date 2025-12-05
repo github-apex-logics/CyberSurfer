@@ -1,11 +1,8 @@
 
 using LightDI;
-using MaykerStudio.Demo;
 using System.Collections;
-
 using UnityEngine;
 using UnityEngine.UI;
-//using UnityEngine.Windows;
 
 
 
@@ -15,7 +12,7 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
     [Inject] private LevelManager LevelManager;
     public WeaponDatabaseSO WeaponDatabaseSO;
     public Rigidbody rb;
-    public GameObject camera;
+    public GameObject camera_;
     public GameObject characterVisuals;
     public Transform groundCheck;
     public Transform edgeCheck;
@@ -91,7 +88,12 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
 
     [Tooltip("Lifetime of the slash projectile")]
     public float slashLifetime = 1.5f;
+    [SerializeField, Tooltip("Vertical offset in degrees (positive = aim higher)")]
+    private float aimOffsetVertical = 5f;
 
+    [SerializeField, Tooltip("Horizontal offset in degrees (positive = aim right)")]
+    private float aimOffsetHorizontal = 0f;
+    public float aimDistance = 100f; // max raycast distance
 
 
 
@@ -129,6 +131,7 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
     private float currentTilt = 0f;
     [SerializeField] private float tiltDamping = 10f;
     private float targetYaw, targetPitch;
+    public bool isMultiSlot;
 
     public Texture knifeTexture, knifeEmission;
 
@@ -137,9 +140,9 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
         UIControllerBtns = FindAnyObjectByType<UIControllerBtns>();
        // LevelManager = FindAnyObjectByType<LevelManager>();
 
-        
+        UIControllerBtns.isMultislot = isMultiSlot;
 
-        touchZoneUI= UIControllerBtns.touchArea;
+        touchZoneUI = UIControllerBtns.touchArea;
 
         int selectedIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);
       
@@ -173,7 +176,8 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
 
     void Update()
     {
-       
+        if (Input.GetKeyDown(KeyCode.Space))
+            SlashPower();
     }
 
     void FixedUpdate()
@@ -412,6 +416,8 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
     {
         Gizmos.color = isGrounded ? Color.green : Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+
+        OnDrawGizmoss();
     }
 
    public CharacterAnimation ca;
@@ -457,8 +463,11 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
         }
 
 
-        UIControllerBtns.SwitchSlots();
-        UIControllerBtns.PowerButtonInteractbale(false);
+        if (isMultiSlot)
+        {
+            UIControllerBtns.SwitchSlots();
+           // UIControllerBtns.PowerButtonInteractbale(false);
+        }
         //UIControllerBtns.powerUpIcon.sprite = null;
 
     }
@@ -484,14 +493,32 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
     }
 
 
-
+  
     public void SpawnSlash(GameObject obj)
     {
+
+        // --- STEP 1: Apply local-space offsets relative to the camera ---
+        Quaternion localOffset = Quaternion.Euler(-aimOffsetVertical, aimOffsetHorizontal, 0f);
+        Vector3 direction = camera_.transform.rotation * localOffset * Vector3.forward;
+
+        // --- STEP 2: Raycast from camera to find aim point ---
+        Vector3 targetPoint;
+        if (Physics.Raycast(camera_.transform.position, direction, out RaycastHit hit, aimDistance))
+        {
+            targetPoint = hit.point;
+        }
+        else
+        {
+            targetPoint = camera_.transform.position + direction * aimDistance;
+        }
+
+        // --- STEP 3: Rotate spawnPoint toward aim direction ---
+        spawnPoint.LookAt(targetPoint);
 
         GameObject slash = Instantiate(obj, spawnPoint.position, spawnPoint.rotation);
         slashAnim = true;   
         slashEffect.Play();
-        StartCoroutine(SlashDelay(slash));
+        StartCoroutine(SlashDelay_old(slash));
       
     }
 
@@ -526,7 +553,48 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
        // Destroy(slash, slashLifetime);
     }
 
-    IEnumerator SlashDelay(GameObject slash)
+
+    private IEnumerator SlashDelay(GameObject slash)
+    {
+        yield return new WaitForSeconds(0.025f);
+        slashAnim = false;
+
+        if (slash.TryGetComponent(out Rigidbody rb))
+        {
+            //  Compute direction based on camera aim (more accurate)
+            Vector3 direction;
+
+            if (camera_ != null)
+            {
+                // Ray from center of screen forward
+                direction = camera_.transform.forward;
+
+                // Optional: if you want the slash to go to where the player is actually looking (raycast)
+                if (Physics.Raycast(camera_.transform.position, camera_.transform.forward, out RaycastHit hit, 100f))
+                {
+                    direction = (hit.point - spawnPoint.position).normalized;
+                }
+            }
+            else
+            {
+                // fallback to spawnPoint direction
+                direction = spawnPoint.forward;
+            }
+
+            // Apply the direction to velocity
+            rb.linearVelocity = direction * slashSpeed; 
+
+            // Optional: orient the slash to its velocity
+            slash.transform.forward = direction;
+        }
+
+        Destroy(slash, slashLifetime);
+    }
+
+
+
+
+    IEnumerator SlashDelay_old(GameObject slash)
     {
         yield return new WaitForSeconds(0.025f);
         slashAnim=false;
@@ -602,13 +670,27 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
         {
      
             SoundManager.instance.PlayClip(ClipName.PowerUp);
-           
-            //UIControllerBtns.UpdateIcon(pu.powerUp);
-            UIControllerBtns.PowerSlot(pu.powerUp);
-            UIControllerBtns.PowerButtonInteractbale(true);
-            pu.ChoosePowerUps();
 
-            other.gameObject.SetActive(false);
+
+            if (isMultiSlot)
+            {
+                //
+                pu.ChoosePowerUps();
+                UIControllerBtns.PowerSlot(pu.powerUp);
+              //  UIControllerBtns.PowerButtonInteractbale(true);
+                Debug.Log("Power Up Collected M: " + pu.powerUp.ToString());
+            }
+            else
+            {
+                pu.ChoosePowerUps();
+                UIControllerBtns.UpdateIcon(pu.powerUp);
+                Debug.Log("Power Up Collected: " + pu.powerUp.ToString());
+            }
+
+                other.gameObject.SetActive(false);
+
+          
+
         }
        
     }   
@@ -628,7 +710,7 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
         UIControllerBtns.hitEffect.SetActive(true);
         UpdateHealthUI();
 
-        camera.GetComponent<CameraShake>().Shake();
+        camera_.GetComponent<CameraShake>().Shake();
 
         if (currentHealth <= 0)
         {
@@ -674,6 +756,37 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
     public void PostInject()
     {
         
+    }
+
+
+
+
+    private void OnDrawGizmoss()
+    {
+        if (!camera_) return;
+
+        Quaternion localOffset = Quaternion.Euler(-aimOffsetVertical, aimOffsetHorizontal, 0f);
+        Vector3 direction = camera_.transform.rotation * localOffset * Vector3.forward;
+
+        Gizmos.color = Color.yellow;
+
+        if (Physics.Raycast(camera_.transform.position, direction, out RaycastHit hit, aimDistance))
+        {
+            Gizmos.DrawLine(camera_.transform.position, hit.point);
+            Gizmos.DrawWireSphere(hit.point, 0.2f);
+        }
+        else
+        {
+            Vector3 endPoint = camera_.transform.position + direction * aimDistance;
+            Gizmos.DrawLine(camera_.transform.position, endPoint);
+            Gizmos.DrawWireSphere(endPoint, 0.2f);
+        }
+
+        if (spawnPoint)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawRay(spawnPoint.position, spawnPoint.forward * 2f);
+        }
     }
 }
 

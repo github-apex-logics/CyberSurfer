@@ -3,26 +3,23 @@ using UnityEngine;
 
 public class EnemyShotCollision : MonoBehaviour
 {
-    
 
+    public GameObject hitEffect;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Slash"))
         {
+            SpawnHitEffect();
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    void SpawnHitEffect()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (hitEffect != null)
+        {
+            Instantiate(hitEffect, transform.position, Quaternion.identity);
+        }
     }
 }

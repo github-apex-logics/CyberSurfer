@@ -6,7 +6,7 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour, IInjectable
 {
     [Range(1, 3)]
-    public int numberOfPowersToChoose = 1;
+   // public int numberOfPowersToChoose = 1;
 
     public List<Powers> selectedPowers = new List<Powers>();
     public GameObject boost, slash, homingSlash;
