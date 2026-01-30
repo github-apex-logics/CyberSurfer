@@ -516,6 +516,7 @@ public class Cyber_Controller : MonoBehaviour, IInjectable
         spawnPoint.LookAt(targetPoint);
 
         GameObject slash = Instantiate(obj, spawnPoint.position, spawnPoint.rotation);
+        slash.transform.SetParent(this.gameObject.transform);
         slashAnim = true;   
         slashEffect.Play();
         StartCoroutine(SlashDelay_old(slash));

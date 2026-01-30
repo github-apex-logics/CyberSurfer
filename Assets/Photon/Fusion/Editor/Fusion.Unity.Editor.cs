@@ -2057,9 +2057,9 @@ namespace Fusion.Editor {
     /// <summary>
     /// Create a new instance of <see cref="NetworkAssetSourceFactoryContext"/>.
     /// </summary>
-    public NetworkAssetSourceFactoryContext(HierarchyProperty hierarchyProperty) {
+    public NetworkAssetSourceFactoryContext(HierarchyIterator hierarchyProperty) {
       AssetGuid = hierarchyProperty.guid;
-      InstanceID = hierarchyProperty.instanceID;
+      InstanceID = hierarchyProperty.entityId;
       AssetName = hierarchyProperty.name;
       IsMainAsset = hierarchyProperty.isMainRepresentation;
     }
@@ -2850,9 +2850,9 @@ namespace Fusion.Editor {
     /// Enumerates assets in the project that match the given search criteria using <see cref="HierarchyProperty"/> API.
     /// Obtained with <see cref="AssetDatabaseUtils.IterateAssets"/>.
     /// </summary>
-    public struct AssetEnumerator : IEnumerator<HierarchyProperty> {
+    public struct AssetEnumerator : IEnumerator<HierarchyIterator> {
 
-      private HierarchyProperty _hierarchyProperty;
+      private HierarchyIterator _hierarchyProperty;
       private int               _rootFolderIndex;
 
       private readonly string[] _rootFolders;
@@ -2866,10 +2866,10 @@ namespace Fusion.Editor {
         if (string.IsNullOrEmpty(root)) {
           // search everywhere
           _rootFolders = s_rootFolders.Value;
-          _hierarchyProperty = new HierarchyProperty(_rootFolders[0]);
+          _hierarchyProperty = new HierarchyIterator(_rootFolders[0]);
         } else {
           _rootFolders       = null;
-          _hierarchyProperty = new HierarchyProperty(root);
+          _hierarchyProperty = new HierarchyIterator(root);
         }
 
         _hierarchyProperty.SetSearchFilter(searchFilter, (int)SearchableEditorWindow.SearchMode.All);
@@ -2888,7 +2888,7 @@ namespace Fusion.Editor {
           return false;
         }
 
-        var newHierarchyProperty = new HierarchyProperty(_rootFolders[++_rootFolderIndex]);
+        var newHierarchyProperty = new HierarchyIterator(_rootFolders[++_rootFolderIndex]);
         UnityInternal.HierarchyProperty.CopySearchFilterFrom(newHierarchyProperty, _hierarchyProperty);
         _hierarchyProperty = newHierarchyProperty;
 
@@ -2905,11 +2905,11 @@ namespace Fusion.Editor {
       }
 
       /// <summary>
-      /// Returns the internernal <see cref="HierarchyProperty"/>. Most of the time
+      /// Returns the internernal <see cref="HierarchyIterator"/>. Most of the time
       /// this will be the same instance as returned the last time, so do not cache
       /// the result - check its properties intestead.
       /// </summary>
-      public HierarchyProperty Current => _hierarchyProperty;
+      public HierarchyIterator Current => _hierarchyProperty;
 
       object IEnumerator.Current => Current;
 
@@ -2943,7 +2943,7 @@ namespace Fusion.Editor {
     /// Enumerable of assets in the project that match the given search criteria.
     /// </summary>
     /// <seealso cref="AssetEnumerator"/>
-    public struct AssetEnumerable : IEnumerable<HierarchyProperty> {
+    public struct AssetEnumerable : IEnumerable<HierarchyIterator> {
 
       private readonly string _root;
       private readonly string _label;
@@ -2963,7 +2963,7 @@ namespace Fusion.Editor {
       /// </summary>
       public AssetEnumerator GetEnumerator() => new AssetEnumerator(_root, _label, _type);
 
-      IEnumerator<HierarchyProperty> IEnumerable<HierarchyProperty>.GetEnumerator() => GetEnumerator();
+      IEnumerator<HierarchyIterator> IEnumerable<HierarchyIterator>.GetEnumerator() => GetEnumerator();
 
       IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
@@ -3887,6 +3887,7 @@ namespace Fusion.Editor {
       _defines = AssetDatabaseUtils.ValidBuildTargetGroups
         .Select(NamedBuildTarget.FromBuildTargetGroup)
         .ToDictionary(x => x, x => PlayerSettings.GetScriptingDefineSymbols(x).Split(';'));
+      _defines[NamedBuildTarget.Server] = PlayerSettings.GetScriptingDefineSymbols(UnityEditor.Build.NamedBuildTarget.Server).Split(';');
     }
   }
   
@@ -5770,6 +5771,12 @@ namespace Fusion.Editor {
   using UnityEditor.IMGUI.Controls;
   using UnityEngine;
   using Object = UnityEngine.Object;
+  
+#if UNITY_6000_2_OR_NEWER
+  using TreeViewState = UnityEditor.IMGUI.Controls.TreeViewState<int>;
+  using TreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+  using TreeView = UnityEditor.IMGUI.Controls.TreeView<int>;
+#endif
 
   [Serializable]
   class FusionGridState : TreeViewState {
@@ -7532,8 +7539,8 @@ namespace Fusion.Editor {
 
     [UnityEditor.InitializeOnLoad]
     public static class HierarchyProperty {
-      public delegate void CopySearchFilterFromDelegate(UnityEditor.HierarchyProperty to, UnityEditor.HierarchyProperty from);
-      public static CopySearchFilterFromDelegate CopySearchFilterFrom = typeof(UnityEditor.HierarchyProperty).CreateMethodDelegate<CopySearchFilterFromDelegate>(nameof(CopySearchFilterFrom), 
+      public delegate void CopySearchFilterFromDelegate(UnityEditor.HierarchyIterator to, UnityEditor.HierarchyIterator from);
+      public static CopySearchFilterFromDelegate CopySearchFilterFrom = typeof(UnityEditor.HierarchyIterator).CreateMethodDelegate<CopySearchFilterFromDelegate>(nameof(CopySearchFilterFrom), 
         BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
     }
     
@@ -12022,7 +12029,9 @@ namespace Fusion.Editor {
 namespace Fusion.Editor {
 #if !FUSION_DEV
   using System;
+  using System.Collections.Generic;
   using System.IO;
+  using System.Text.RegularExpressions;
   using UnityEditor;
   using UnityEditor.Build;
   using UnityEditor.PackageManager;
@@ -12033,9 +12042,22 @@ namespace Fusion.Editor {
     // Defines to add
     private const string DEFINE_VERSION = "FUSION2";
     private const string DEFINE_WEAVER = "FUSION_WEAVER";
+
+    // Extended Version Defines 
+    private const string DEFINE_VERSION_EXTENDED_CHECK = @"FUSION(_[\d]+){1,3}(_OR_NEWER)?";
+    private const string DEFINE_VERSION_EXTENDED = "FUSION";
+    private static string DEFINE_VERSION_EXTENDED_MAJOR => DEFINE_VERSION_EXTENDED                         + $"_{Versioning.GetCurrentVersion.Major}";
+    private static string DEFINE_VERSION_EXTENDED_MAJOR_MINOR => DEFINE_VERSION_EXTENDED_MAJOR             + $"_{Versioning.GetCurrentVersion.Minor}";
+    private static string DEFINE_VERSION_EXTENDED_MAJOR_MINOR_PATCH => DEFINE_VERSION_EXTENDED_MAJOR_MINOR + $"_{Versioning.GetCurrentVersion.Build}";
+
+    // Defines for Logs
+    private const string DEFINE_LOG_CHECK = "FUSION_LOGLEVEL_";
+    private const string DEFINE_LOG_DEFAULT = "FUSION_LOGLEVEL_INFO";
+
     // Packages to search for
     private const string PACKAGE_TO_SEARCH = "nuget.mono-cecil";
     private const string PACKAGE_TO_INSTALL = "com.unity.nuget.mono-cecil@1.10.2";
+
     // Constants
     private const string PACKAGES_DIR = "Packages";
     private const string MANIFEST_FILE = "manifest.json";
@@ -12044,7 +12066,8 @@ namespace Fusion.Editor {
       var defines = GetCurrentDefines();
 
       // Check for Defines
-      if (defines.Contains(DEFINE_WEAVER) && defines.Contains(DEFINE_VERSION)) {
+      if (defines.Contains(DEFINE_WEAVER) && defines.Contains(DEFINE_VERSION) && defines.Contains(DEFINE_VERSION_EXTENDED_MAJOR_MINOR_PATCH)) {
+        // check version defines here 
         return;
       }
 
@@ -12057,8 +12080,21 @@ namespace Fusion.Editor {
 
       if (File.ReadAllText(manifest).Contains(PACKAGE_TO_SEARCH)) {
         // append defines
-        TryAddDefine(ref defines, DEFINE_WEAVER, d => d.Contains(DEFINE_WEAVER) == false);
+        TryAddDefine(ref defines, DEFINE_WEAVER, d => d.Contains(DEFINE_WEAVER)   == false);
         TryAddDefine(ref defines, DEFINE_VERSION, d => d.Contains(DEFINE_VERSION) == false);
+
+        // Remove any previous version defines
+        CheckDefineForRemoval(ref defines, d => Regex.IsMatch(d, DEFINE_VERSION_EXTENDED_CHECK)                                         == false);
+        TryAddDefine(ref defines, DEFINE_VERSION_EXTENDED_MAJOR, d => d.Contains(DEFINE_VERSION_EXTENDED_MAJOR)                         == false);
+        TryAddDefine(ref defines, DEFINE_VERSION_EXTENDED_MAJOR_MINOR, d => d.Contains(DEFINE_VERSION_EXTENDED_MAJOR_MINOR)             == false);
+        TryAddDefine(ref defines, DEFINE_VERSION_EXTENDED_MAJOR_MINOR_PATCH, d => d.Contains(DEFINE_VERSION_EXTENDED_MAJOR_MINOR_PATCH) == false);
+
+        foreach (var extraVersion in BuildVersionDefines()) {
+          TryAddDefine(ref defines, extraVersion, d => d.Contains(extraVersion) == false);
+        }
+
+        // Add default Log Level if none is found
+        TryAddDefine(ref defines, DEFINE_LOG_DEFAULT, d => d.Contains(DEFINE_LOG_CHECK) == false);
 
         SetCurrentDefines(defines);
       } else {
@@ -12067,10 +12103,32 @@ namespace Fusion.Editor {
       }
     }
 
+    private static void CheckDefineForRemoval(ref string defines, Func<string, bool> check) {
+      List<string> filteredDefines = new();
+
+      foreach (var define in defines.Split(";")) {
+        if (check(define)) {
+          filteredDefines.Add(define);
+        }
+      }
+
+      defines = string.Join(";", filteredDefines);
+    }
+
     private static void TryAddDefine(ref string defines, string targetDefine, Func<string, bool> check) {
       if (check(defines)) {
-        defines = $"{defines};{targetDefine}"; 
+        defines = $"{defines};{targetDefine}";
         FusionEditorLog.LogInstaller($"Adding Fusion Define Symbol: '{targetDefine}'");
+      }
+    }
+
+    private static IEnumerable<string> BuildVersionDefines() {
+      for (var i = 2; i <= Versioning.GetCurrentVersion.Major; i++) {
+        yield return DEFINE_VERSION_EXTENDED + $"_{i}_OR_NEWER";
+
+        for (var j = 0; j <= Versioning.GetCurrentVersion.Minor; j++) {
+          yield return DEFINE_VERSION_EXTENDED + $"_{i}_{j}_OR_NEWER";
+        }
       }
     }
 
@@ -13300,15 +13358,18 @@ namespace Fusion.Editor {
           Label("Active Players", playerCount);
 
           if (runner.IsServer && playerCount > 0) {
-            foreach (var item in runner.ActivePlayers) {
+            foreach (var player in runner.ActivePlayers) {
 
               // skip local player
-              if (runner.LocalPlayer == item) { continue; }
+              if (runner.LocalPlayer == player) {
+                continue;
+              }
 
-              Label("Player:PlayerId", item.PlayerId);
-              Label("Player:ConnectionType", runner.GetPlayerConnectionType(item));
-              Label("Player:UserId", runner.GetPlayerUserId(item));
-              Label("Player:RTT", runner.GetPlayerRtt(item));
+              Label("Player:PlayerId", player.PlayerId);
+              Label("Player:ConnectionType", runner.GetPlayerConnectionType(player));
+              Label("Player:UserId", runner.GetPlayerUserId(player));
+              Label("Player:RTT", runner.GetPlayerRtt(player));
+              Label("Player:Committed?", runner.IsPlayerCommitted(player));
             }
           }
 
