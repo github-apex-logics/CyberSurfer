@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
@@ -40,6 +39,7 @@ public class RegisterManager : MonoBehaviour
     public GameObject profilePanel;
     public TextMeshProUGUI profileName;
     public Button RegisterButtonUI;
+    public GameObject LoadingObj;
 
     public TutorialManager tutorialManager;
 
@@ -258,6 +258,7 @@ public class RegisterManager : MonoBehaviour
                     GetPlayerProfile = true
                 }
             };
+            LoadingObj.SetActive(true);
             PlayFabClientAPI.LoginWithEmailAddress(request, onLoginSuccess, OnErrorLogin);
         }
         else
@@ -274,7 +275,7 @@ public class RegisterManager : MonoBehaviour
         PlayerPrefs.SetString("Password", LoginPasswordField.text);
         PlayerPrefs.SetInt("NewLogin",1);
 
-
+        LoadingObj.SetActive(false);
         UserName = result.InfoResultPayload.PlayerProfile.DisplayName;
         
         loginBtn.SetActive(false);
@@ -317,8 +318,99 @@ public class RegisterManager : MonoBehaviour
     {
        // LoginMessageText.text = error.ErrorMessage;
         invalidMessage.SetActive(true);
+        LoadingObj.SetActive(false);
         Debug.Log(error);
     }
+
+    //-----------------------------Guest Login----------------------------
+    public void GuestLoginButton()
+    {
+        if (InternetChecker.IsConnectedToInternet())
+        {
+            var request = new LoginWithCustomIDRequest
+            {
+                CustomId = GetOrCreateGuestId(),
+                CreateAccount = true,
+                TitleId = TitleId,
+                InfoRequestParameters = new GetPlayerCombinedInfoRequestParams
+                {
+                    GetPlayerProfile = true
+                }
+            };
+            LoadingObj.SetActive(true);
+            PlayFabClientAPI.LoginWithCustomID(request, onGuestLoginSuccess, OnErrorLogin);
+
+        }
+        else
+        {
+            noInternetMessage.SetActive(true);
+        }
+    }
+
+    private string GetOrCreateGuestId()
+    {
+        const string GUEST_ID_KEY = "PLAYFAB_GUEST_ID";
+
+        if (PlayerPrefs.HasKey(GUEST_ID_KEY))
+        {
+            return PlayerPrefs.GetString(GUEST_ID_KEY);
+        }
+
+        string newGuestId = SystemInfo.deviceUniqueIdentifier;
+
+        // Fallback (very rare, but safe)
+        if (string.IsNullOrEmpty(newGuestId))
+            newGuestId = System.Guid.NewGuid().ToString();
+
+        PlayerPrefs.SetString(GUEST_ID_KEY, newGuestId);
+        PlayerPrefs.Save();
+
+        return newGuestId;
+    }
+
+
+    void onGuestLoginSuccess(LoginResult result)
+    {
+        PlayerPrefs.SetString("Session", result.PlayFabId);
+        PlayerPrefs.SetInt("NewLogin", 1);
+
+        // Email login only
+        if (!string.IsNullOrEmpty(LoginEmailField.text))
+        {
+            PlayerPrefs.SetString("Email", LoginEmailField.text);
+            PlayerPrefs.SetString("Password", LoginPasswordField.text);
+        }
+
+        // Handle Display Name safely
+        UserName = result.InfoResultPayload?.PlayerProfile?.DisplayName;
+
+        if (string.IsNullOrEmpty(UserName))
+        {
+            UserName = "Guest_" + result.PlayFabId.Substring(0, 6);
+        }
+
+        PlayerPrefs.SetString("UserName", UserName);
+
+        loginBtn.SetActive(false);
+        profilePanel.SetActive(true);
+        profileName.text = UserName;
+
+        // Clear fields
+        LoginEmailField.text = "";
+        LoginPasswordField.text = "";
+
+        LoginPanel.SetActive(false);
+        RegistrationPanel.SetActive(false);
+
+        tutorialManager.OnPlayerLoggedIn();
+        tutorialManager.NextStep();
+        syncManager.LoadLocalData();
+
+        Debug.Log("Login Success");
+    }
+
+
+
 
     //----------------------------Password Recovery--------------------------
 
