@@ -47718,7 +47718,7 @@ MonoBehaviour:
   _spreadLoop: 1
   _startDelay: 0
   _radius: 700
-  _width: 2316
+  _width: 2220
   _height: 1080
   _angle: 45
   _length: 100
@@ -62171,7 +62171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1258792959
 RectTransform:
   m_ObjectHideFlags: 0
